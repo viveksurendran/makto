@@ -2,20 +2,22 @@
 <div class="row firstFooter">
   <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12 contactDetails">
         <div class="col-lg-5  col-xs-12 col-md-6 col-sm-6">
-          <p><%= image_tag "telephone.png", :class => 'pull-left' %>
+          <p><%= image_tag "telephone.png" %>
             <span class="contactContent">CALL: 91-73391-88891</span></p>
         </div>
-        <div class="col-lg-7 col-xs-12 col-md-6 col-sm-6">
-          <p><%= image_tag "email.png", :class => 'pull-left' %>
+        <div class="col-lg-7  col-md-6 col-sm-6 col-xs-12 emailRow">
+          <p><%= image_tag "email.png" %>
             <span class="contactContent"> EMail: <%= link_to 'info@maktoinc.com', "http://www.google.com", target: "_blank"%></span></p>
         </div>
   </div>
-  <div class="col-lg-6 col-md-5 col-sm-4">
-        <div class="pull-right">
+  <div class="col-lg-6 col-md-5 col-sm-4 col-xs-12">
+        <div class="col-lg-6 hidden-sm hidden-md hidden-xs">
+        </div>
+        <div class="socialMedia">
            Connect us
-           <%= link_to image_tag("facebook.png", alt: "Facebook"), "http://www.facebook.com/mypage", target: :_blank, :class=>'socialMediaHeading'%>
-           <%= link_to image_tag("twitter.png", alt: "twitter"), "http://www.twitter.com", target: :_blank, :class=> 'pull-right' %>
-           <%= link_to image_tag("linkedin.png", alt: "linkedin"), "http://www.facebook.com/mypage", target: :_blank, :class => 'pull-right' %>
+           <%= link_to image_tag("facebook.png", alt: "Facebook"), "http://www.facebook.com/mypage", target: :_blank, :class => 'socialMediaHeading'%>
+           <%= link_to image_tag("twitter.png", alt: "twitter"), "http://www.twitter.com", target: :_blank %>
+           <%= link_to image_tag("linkedin.png", alt: "linkedin"), "http://www.facebook.com/mypage", target: :_blank %>
         </div>
   </div>
 </div>
