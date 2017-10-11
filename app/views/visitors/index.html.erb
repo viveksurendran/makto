@@ -1,0 +1,43 @@
+<!-- carousel -->
+<div class="row">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                     <div class="carousel-inner">
+                          <div class="item active">
+                               <%= image_tag "slider-data.jpg" %>
+                               <div class="carousel-caption">
+                                    <h1>Dashboarding, Reporting & <br><span>Analytics</span></h1>
+                                </div>
+                          </div>
+                          <div class="item">
+                                <%= image_tag "slider-carton.jpg", :class => 'img-responsive'%>
+                          </div>
+                     </div>
+               </div>
+</div>
+<div class="row products">
+  <div class="col-lg-12 col-md-12 col-sm-12">  <!-- Products & solutions Heading -->
+    <h3 class="text-center top">Bootstrap Your Business Transformation With Our <br>Products & Solutions</h3>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6">  <!-- Enterprise Warehouse Management System-->
+              <center><%= image_tag "carton-logo-section2.png", :style => 'padding-top:20px;' %></center>
+             <h5 class="text-center">Enterprise Warehouse <br> Management System</h5>
+  </div>
+ <div class="col-lg-3 col-md-3 col-sm-6">  <!-- Data Analytics -->
+             <center><%= image_tag "data-analytics.png" %></center>
+             <h5 class="text-center">Data Analytics, Modeling,<br>Reporting & Visualisation</h5>
+ </div>
+ <div class="col-lg-3 col-md-3 col-sm-6">  <!-- Hosting Infrastructure -->
+            <center><%= image_tag "decksys-logo-section2.png", :style => 'padding-top:20px;' %></center>
+             <h5 class="text-center">Hosting, Infrastructure &<br>Cloud Management</h5>
+ </div>
+ <div class="col-lg-3 col-md-3 col-sm-6">
+              <center><%= image_tag "business-process-section2.png" %></center>
+             <h5 class="text-center">Automate Business Processes &<br>Enterprise Mobility</h5>
+ </div>
+</div>
+<script>
+  $('#myCarousel').carousel
+  ({
+    interval: 10000,
+  })
+</script>

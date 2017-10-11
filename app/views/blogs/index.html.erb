@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+<h1>Corporate Blog</h1>
+<div class="row">
+    <div class="col-lg-8">
+        <% @blogs.each do |blog| %>
+        <div class="makto_blog_title"><h2><%= link_to blog.title %></h2></div>
+        <div class="makto_blog_desc"><%= raw blog.description.truncate(1000) %></div>
+        <div><%= social_share_button_tag(blog.title) %></div>
+        <hr />
+        <% end %>
+    </div>
+    <div class="col-lg-4">
+        <div class="makto_blog_archive"><h5>Archives</h5>
+    
+        </div>
+        <div class="makto_blog_categories"><h5>Categories</h5></div>
+    </div>
+</div>
+
+
+<%= link_to 'New Blog', new_blog_path %>
+</div>

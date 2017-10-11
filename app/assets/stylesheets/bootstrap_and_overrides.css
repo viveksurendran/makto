@@ -1,0 +1,288 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Static version of css will use Glyphicons sprites by default
+  =require twitter-bootstrap-static/sprites
+  */
+
+
+/* Extra Small */
+@media(max-width: 767px){
+  .carousel-caption{
+    padding-bottom: 0px!important;
+    left:40%!important;
+  }
+  .carousel-caption h1{
+    font-size: 15px!important;
+  }
+  .top{   /*  visitors#index products & solutions*/
+    font-size: 16px!important;
+    padding: 0px 0px!important;
+      }
+  .manageInventory{  /* cartonpage second row Carton Definition */
+    padding: 0px 0px 0px 0px!important;
+  }
+  .teamSubHeader{
+    padding-left: 20px!important;
+  }
+  .maktofooterStyle{
+    padding-right: 3px!important;
+  }
+  .thirdFooter{
+    padding-top: 10px!important;
+  }
+  .products h5{
+      padding-bottom: 10px!important;
+      padding-top: 10px;
+  }
+}
+
+/* Small Screen */
+@media (min-width: 768px) and (max-width: 991px) {
+   .carousel-caption{
+     padding-bottom: 0px!important;
+     left:45%!important;
+   }
+   .carousel-caption h1{
+     font-size: 30px!important;
+   }
+   .top{     /* Landing page visitors#index products & solutions */
+     padding-top: 0px!important;
+   }
+   .firstFooter{  /* Footer first row*/
+     padding:0px 0px!important;
+    }
+    .socialMediaHeading{ /* footer first row CONNECT US */
+      padding-left: 10px!important;
+    }
+    .manageInventory{
+      padding: 35px 0px 0px 25px!important;
+    }
+    .teamSubHeader{
+      padding-left: 20px!important;
+    }
+    .imageTop{
+      padding-top: 30px;
+    }
+    .operationImage{
+      padding-bottom: 0px!important;
+    }
+
+}
+/* Medium Screen */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-caption{
+    padding-bottom: 0px!important;
+    left:47%!important;
+  }
+  .carousel-caption h1{
+    font-size: 35px!important;
+  }
+  .manageInventory{  /* cartonpage second row Carton Definition */
+    padding: 80px 0px 0px 100px!important;
+  }
+  .teamSubHeader{
+    padding-left: 20px!important;
+  }
+  .imageTop{
+    padding-top: 30px;
+  }
+}
+
+.preloader{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: 99999;
+}
+
+.preloader .preloader-gif{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background: url('loading.gif') no-repeat;
+}
+a{
+  color: #000!important;
+}
+a:hover{
+  background-color: transparent!important;
+}
+body{
+  margin: 0px!important;
+}
+
+/* navbar css*/
+.logoHeader{
+  padding-top: 10px!important;
+  padding-bottom: 15px!important;
+}
+.navbar-nav li a{
+  font-family: 'Josefin Sans', Sans-serif!important;
+}
+.navbar-nav li a:hover, .dropdown:hover, .dropdown-menu, .nav .open>a{
+    background-color: #00acee!important;
+    color: #ffffff!important;
+}
+.navbar{
+	margin-bottom: 0px !important;
+}
+
+.navbar-nav li:hover ul.dropdown-menu {
+   display: block;
+}
+.navbar-right{
+  margin-top: 40px!important;
+}
+.navbar-default{
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+.navbar-right .dropdown-menu {
+     left: 0!important;
+}
+.dropdown-menu{
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border: 0px solid transparent!important;
+}
+
+/* visitor#index Landing page */
+.carousel-caption {
+    left: 47%;
+    right: 0%;
+    text-align: left;
+    }
+.carousel-caption h1{
+  font-size: 50px;
+  font-family: 'Josefin Sans', Sans-serif!important;
+}
+.carousel-caption h1 span{
+  font-weight: bold;
+}
+.products{
+  background-color: #7dcbf1;
+  padding-bottom: 40px;
+
+}
+.top{
+  padding: 30px 0px;
+}
+
+
+/* footer css */
+.firstFooter{
+  background-color: #e2e2e2;
+  padding:0px 30px;
+  font-family: 'Josefin Sans', Sans-serif!important;
+}
+.contactDetails {
+  padding-top: 10px;
+}
+.contactContent{
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.socialMediaHeading{
+  padding-left:20px;
+}
+.secondFooter{
+  padding-top: 20px;
+  background-color: #ededed;
+  font-family: 'Josefin Sans', Sans-serif!important;
+}
+.maktosubHeading{
+  margin-left: 10px;
+}
+.sequence{
+  padding-top: 40px;
+  margin-left: 10px;
+}
+.thirdFooter{
+   padding-top: 40px;
+   background-color: #ededed;
+   font-family: Arial;
+}
+.maktofooterStyle{ /* Terms & Conditions */
+  padding-right: 5px;
+  border-right:2px solid black;
+  color: #000;
+}
+/* Carton css */
+.manageInventory{
+  padding: 130px 0px 0px 200px;
+}
+.cartonHeading{
+  font-family: 'Josefin Sans', Sans-serif!important;
+  color:#7dcbf1;
+}
+.cartonContent{
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 16px;
+}
+.imageFullScreen{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.cartonImageFirstRow{
+  padding-top: 30px;
+}
+
+.cartonImageSecondRow{
+  padding-bottom: 30px;
+}
+
+/* company page css start */
+/* company first row */
+.maktoBrief{
+  background-color: #fafafa;
+ font-family: 'Josefin Sans', Sans-serif;
+ }
+ /* company first row Why Makto content */
+.explanation{
+  color:#4f4e9d;
+  padding-bottom: 30px;
+}
+ /* Team Heading */
+.teamHeader{
+  font-size: 20px;
+  font-family: 'Josefin Sans', Sans-serif;
+  padding-top: 20px;
+}
+.teamSubHeader{
+  font-size: 20px;
+  color:#484786;
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-bottom: 15px;
+   font-family: 'Josefin Sans', Sans-serif;
+}
+.thumbnail{
+  border: 0px solid transparent;
+  display:inline-block;
+  margin-bottom: 0px;
+}
+.caption{
+   font-family: 'Josefin Sans', Sans-serif;
+ }
+.caption h4{
+   margin-bottom: 0px!important;
+   font-weight: bold;
+  }
+.caption div{
+  color:  #888888;
+  padding-bottom: 5px;
+    }
+/* operations image second Row */
+.operationImage{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
