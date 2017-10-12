@@ -5,7 +5,13 @@
   =require twitter-bootstrap-static/sprites
   */
 
-
+/* Scroll  */
+@media(max-width:330px){
+  body{
+overflow-x: scroll;
+min-width: 330px;
+}
+}
 /* Extra Small */
 @media(max-width: 767px){
   .carousel-caption{
@@ -21,6 +27,13 @@
       }
   .manageInventory{  /* cartonpage second row Carton Definition */
     padding: 0px 0px 0px 0px!important;
+    text-align: center;
+  }
+  .cartonHeading{
+    font-size: 26px!important;
+      }
+  .cartonContent{
+    font-size: 16px!important;
   }
   .teamSubHeader{
     padding-left: 20px!important;
@@ -48,6 +61,7 @@
       padding-bottom: 10px!important;
       padding-top: 10px;
   }
+  /* company page */
 }
 
 /* Small Screen */
