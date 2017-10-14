@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be16ecde-bf38-4b37-9435-3320186ae7bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/loading.gif" afterPath="$PROJECT_DIR$/app/assets/images/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
-    </list>
+    <list default="true" id="be16ecde-bf38-4b37-9435-3320186ae7bd" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -256,12 +253,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507919149493</updated>
       <workItem from="1507919180996" duration="129000" />
-      <workItem from="1507957827959" duration="8382000" />
+      <workItem from="1507957827959" duration="9290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8511000" />
+    <option name="totallyTimeSpent" value="9419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1600" height="904" extended-state="6" />
