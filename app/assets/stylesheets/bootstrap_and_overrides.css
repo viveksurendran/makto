@@ -14,6 +14,16 @@ min-width: 330px;
 }
 /* Extra Small */
 @media(max-width: 767px){
+    .logoHeader{
+        width: 50px;
+        margin-left: 30px;
+        padding-top: 5px!important;
+        padding-bottom: 5px!important;
+    }
+    .navbar-toggle{
+        margin-top: 20px!important;
+        margin-right:30px;
+    }
   .carousel-caption{
     padding-bottom: 0px!important;
     left:40%!important;
@@ -61,11 +71,43 @@ min-width: 330px;
       padding-bottom: 10px!important;
       padding-top: 10px;
   }
-  /* company page */
-}
+  /* data analytic */
+  .imageData{
+    top: 45%!important;
+    left: 40%!important;
+  }
+  .imageData ul li{
+    font-size: 13px!important;
+    margin-top: 0px!important;
+  }
+  .dataManagement{
+    padding: 15px 0px!important;
+  }
+  .dataManagement h2{
+    font-size: 18px!important;
+    margin-left: 2px!important;
+  }
+  .keyPerformanceIndicator p{
+    padding: 20px 30px!important;
+    font-size: 15px!important;
+  }
+  .dataModel p{
+    padding: 20px 60px!important;
+  }
+button.accordion{
+    font-size: 18px!important;
+    padding: 15px!important;
+  }
+  }
 
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
+    .navbar-right{
+        margin-top: 30px!important;
+    }
+    .logoHeader{
+        width: 70%;
+    }
    .carousel-caption{
      padding-bottom: 0px!important;
      left:45%!important;
@@ -94,10 +136,37 @@ min-width: 330px;
     .operationImage{
       padding-bottom: 0px!important;
     }
+    /* data analytic */
+    .imageData ul li{
+      font-size: 19px!important;
+      margin-top: 10px!important;
+    }
+    .dataManagement{
+      padding: 15px 0px!important;
+    }
+    .dataManagement h2{
+      font-size: 24px!important;
+    }
+    .keyPerformanceIndicator p{
+      padding: 20px 30px!important;
+    }
+    .dataModel p{
+      padding: 25px 30px!important;
+    }
+    button.accordion{
+      font-size: 18px!important;
+      padding: 15px!important;
+    }
 
 }
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-right{
+        margin-top: 30px!important;
+    }
+    .logoHeader{
+        width: 80%;
+    }
   .carousel-caption{
     padding-bottom: 0px!important;
     left:47%!important;
@@ -114,8 +183,29 @@ min-width: 330px;
   .imageTop{
     padding-top: 30px;
   }
+  /* data analytic */
+  .imageData ul li{
+    font-size: 24px!important;
+    margin-top: 10px!important;
+  }
+  .dataManagement{
+    padding: 20px 0px!important;
+  }
+  .dataManagement h2{
+    font-size: 24!important;
+  }
+  .keyPerformanceIndicator p{
+    padding: 20px 50px!important;
+  }
+  .dataModel p{
+    padding: 25px 50px!important;
+  }
+  button.accordion{
+    font-size: 19px!important;
+    padding: 20px!important;
+  }
 }
-
+/* Medium Screen end */
 .preloader{
     position: fixed;
     top:0;
@@ -147,8 +237,8 @@ body{
 
 /* navbar css*/
 .logoHeader{
-  padding-top: 10px!important;
-  padding-bottom: 15px!important;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 .navbar-nav li a{
   font-family: 'Josefin Sans', Sans-serif!important;
@@ -165,7 +255,7 @@ body{
    display: block;
 }
 .navbar-right{
-  margin-top: 40px!important;
+  margin-top: 40px;
 }
 .navbar-default{
   background-color: transparent;
@@ -208,7 +298,7 @@ body{
   background-color: #e2e2e2;
   padding:0px 30px;
   font-family: 'Josefin Sans', Sans-serif!important;
-}
+  }
 .contactDetails {
   padding-top: 10px;
 }
@@ -217,6 +307,7 @@ body{
   top: 5px;
   left: 10px;
 }
+
 .socialMediaHeading{
   padding-left:20px;
 }
@@ -224,6 +315,7 @@ body{
   padding-top: 20px;
   background-color: #ededed;
   font-family: 'Josefin Sans', Sans-serif!important;
+  font-size: 16px;
 }
 .maktosubHeading{
   margin-left: 10px;
@@ -277,15 +369,16 @@ body{
 .explanation{
   color:#4f4e9d;
   padding-bottom: 30px;
+  font-size: 16px;
 }
  /* Team Heading */
 .teamHeader{
-  font-size: 20px;
+  font-size: 28px;
   font-family: 'Josefin Sans', Sans-serif;
   padding-top: 20px;
 }
 .teamSubHeader{
-  font-size: 20px;
+  font-size: 24px;
   color:#484786;
   padding-top: 20px;
   padding-left: 150px;
@@ -312,4 +405,94 @@ body{
 .operationImage{
   padding-top: 30px;
   padding-bottom: 30px;
+}
+/* Contact Us--css-Start */
+#map {
+       height: 400px;
+       width: 100%;
+      }
+.mapLayout{
+ width: 100%;
+}
+.officeAddress{
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.officeAddress p{
+  font-size: 16px!important;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.officeAddress p span{
+  color:#4f4e9d;
+}
+/* Data Analytics Css-Start */
+.imageData{
+  position: absolute;
+top:45%;
+left:58%;
+color:#000;
+}
+.imageData ul{
+  list-style-type: none;
+}
+.imageData ul li{
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 20px;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.dataManagement{
+  background-color:#164163;
+  color: #ffffff;
+  padding: 40px 0px;
+}
+.dataManagement h2{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.keyPerformanceIndicator{
+   border-right: 2px solid #ffffff;
+  }
+
+.keyPerformanceIndicator p{
+  padding: 20px 80px;
+  font-size: 1.2em;
+  font-family: 'Josefin Sans', Sans-serif!important;
+}
+.dataModel{
+  margin-top: 10px;
+}
+.dataModel p{
+  padding: 25px 90px;
+  font-size: 1.2em;
+  font-family: 'Josefin Sans', Sans-serif!important;
+}
+.dataVisualization{
+  background-color: #a7cfe4;
+}
+button.accordion {
+    background-color:#a7cfe4;
+    color: #444;
+    cursor: pointer;
+    padding: 28px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 23px;
+    font-family: 'Josefin Sans', Sans-serif;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #a7cfe4;
+}
+.panel{
+  margin-bottom: 0px!important;
+}
+div.panel {
+    padding: 0 18px;
+    background-color: #ececec;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease-out;
 }

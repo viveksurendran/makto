@@ -37,10 +37,10 @@
        <h4>SERVICES</h4>
       <div class="maktosubHeading">
          <%= link_to 'Cloud Management' %><br>
-         <%= link_to 'Data Analytics' %><br>
-         <%= link_to 'Data Modeling' %><br>
+         <%= link_to 'Data Analytics', data_analytics_path %><br>
+         <%= link_to 'Data Modeling', href="data-analytics.html#data-modeling" %><br>
         <div class="hidden-lg hidden-md">
-            <%= link_to 'Data Visualisation' %><br>
+            <%= link_to 'Data Visualisation', data_visualization_path %><br>
             <%= link_to 'Application Development' %><br>
             <%= link_to 'Enterprise Mobility' %>
         </div>
@@ -48,7 +48,7 @@
    </div>
    <div class="col-lg-2 col-md-3 hidden-sm hidden-xs"><%# Services  %>
        <div class="sequence">
-         <%= link_to 'Data Visualisation' %><br>
+         <%= link_to 'Data Visualisation',data_visualization_path %><br>
          <%= link_to 'Application Development' %><br>
          <%= link_to 'Enterprise Mobility' %>
        </div>
@@ -56,10 +56,11 @@
    <div class="col-lg-2 col-md-2 col-sm-4"><%# Company %>
          <h4>COMPANY</h4>
        <div class="maktosubHeading">
-         <%= link_to 'About Makto' %><br>
-         <%= link_to 'Team' %><br>
+         <%= link_to 'About Makto', company_path %><br>
+        <%= link_to 'Team', team_path, :id => "attach_box"  %><br>
+
          <%= link_to 'Careers' %><br>
-         <div class="hidden-lg hidden-md">
+       <div class="hidden-lg hidden-md">
             <%= link_to 'Corporate Blog' %>
          </div>
        </div>
@@ -81,8 +82,18 @@
              <a><span>Contact Us</span></a>
             </p>
          </div>
-         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+         <div id="sec_box" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <%= link_to 'Makto Technology Limited Private Limited. IN', visitors_index_path %>
          </div>
    </div>
 </div>
+
+<!-- <script>
+      $(document).ready(function()
+      {
+         $("#attach_box").click(function() {
+         $("#sec_box").hide()
+         $("#raja").show()
+         });
+       });
+</script> -->

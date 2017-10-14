@@ -1,0 +1,33 @@
+<div class="row">
+      <div class="mapLayout">
+           <div id="map" class="img-responsive">
+           </div>
+     </div>
+</div>
+<div class="row">
+      <div class="col-lg-6 officeAddress">
+          <center>
+             <h1>Coimbatore</h1>
+            <p> GF 30. Elcot.SEZ, IT/ITeS, Tidel Park, <br>
+             Coimbatore 641014, Tamilnadu, india.<br>
+             <span>Email: info@maktoinc.com</span>,<br>
+             <span>Contact: 8056592140.</span></p>
+          </center>
+       </div>
+</div>
+<script>
+function initMap() {
+   var uluru = {lat: 11.031670,  lng:77.018820 };
+   var map = new google.maps.Map(document.getElementById('map'), {
+     zoom: 15,
+     center: uluru
+   });
+   var marker = new google.maps.Marker({
+     position: uluru,
+     map: map
+   });
+ }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4CuJbaoJC2-QwRfg9_5fGJZCYDn38694&callback=initMap">
+</script>
