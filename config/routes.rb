@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :employees
   resources :blogs
   get 'carton', :to => 'static#carton'
   get 'company', :to => 'static#company'
