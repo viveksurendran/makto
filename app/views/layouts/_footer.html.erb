@@ -1,3 +1,5 @@
+<div class="footer">
+
 <!-- footer first row -->
 <div class="row firstFooter">
   <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12 contactDetails">
@@ -40,7 +42,7 @@
          <%= link_to 'Data Analytics', data_analytics_path %><br>
          <%= link_to 'Data Modeling', href="data-analytics.html#data-modeling" %><br>
         <div class="hidden-lg hidden-md">
-            <%= link_to 'Data Visualisation', data_visualization_path %><br>
+            <%= link_to 'Data Visualization',href="data-analytics.html#data-visualization" %><br>
             <%= link_to 'Application Development' %><br>
             <%= link_to 'Enterprise Mobility' %>
         </div>
@@ -48,7 +50,7 @@
    </div>
    <div class="col-lg-2 col-md-3 hidden-sm hidden-xs"><%# Services  %>
        <div class="sequence">
-         <%= link_to 'Data Visualisation',data_visualization_path %><br>
+         <%= link_to 'Data Visualisation',href="data-analytics.html#data-visualization" %><br>
          <%= link_to 'Application Development' %><br>
          <%= link_to 'Enterprise Mobility' %>
        </div>
@@ -57,7 +59,7 @@
          <h4>COMPANY</h4>
        <div class="maktosubHeading">
          <%= link_to 'About Makto', company_path %><br>
-        <%= link_to 'Team', team_path, :id => "attach_box"  %><br>
+        <%= link_to 'Team', href="company.html#team", :id => "attach_box"  %><br>
 
          <%= link_to 'Careers' %><br>
        <div class="hidden-lg hidden-md">
@@ -88,12 +90,12 @@
    </div>
 </div>
 
-<!-- <script>
+</div>
+ <!-- <script>
       $(document).ready(function()
       {
          $("#attach_box").click(function() {
-         $("#sec_box").hide()
-         $("#raja").show()
+         $("#raja").hide();
          });
        });
 </script> -->
