@@ -686,10 +686,26 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
   */
 
+/* Scroll  */
 
+@media(max-width:330px){
+  body{
+overflow-x: scroll;
+min-width: 330px;
+}
+}
 /* Extra Small */
-
 @media(max-width: 767px){
+    .logoHeader{
+        width: 50px;
+        margin-left: 30px;
+        padding-top: 5px!important;
+        padding-bottom: 5px!important;
+    }
+    .navbar-toggle{
+        margin-top: 20px!important;
+        margin-right:30px;
+    }
   .carousel-caption{
     padding-bottom: 0px!important;
     left:40%!important;
@@ -703,12 +719,32 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
       }
   .manageInventory{  /* cartonpage second row Carton Definition */
     padding: 0px 0px 0px 0px!important;
+    text-align: center;
+  }
+  .cartonHeading{
+    font-size: 26px!important;
+      }
+  .cartonContent{
+    font-size: 16px!important;
   }
   .teamSubHeader{
     padding-left: 20px!important;
   }
   .maktofooterStyle{
     padding-right: 3px!important;
+  }
+  .firstFooter {
+     padding: 0px 0px!important;
+    text-align: center;
+  }
+  .emailRow{
+    margin-left: 10px;
+  }
+  .socialMedia{
+    margin-left: 45px;
+  }
+  .socialMediaHeading{
+    padding-left: 10px!important;
   }
   .thirdFooter{
     padding-top: 10px!important;
@@ -717,10 +753,43 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
       padding-bottom: 10px!important;
       padding-top: 10px;
   }
-}
+  /* data analytic */
+  .imageData{
+    top: 45%!important;
+    left: 40%!important;
+  }
+  .imageData ul li{
+    font-size: 13px!important;
+    margin-top: 0px!important;
+  }
+  .dataManagement{
+    padding: 15px 0px!important;
+  }
+  .dataManagement h2{
+    font-size: 18px!important;
+    margin-left: 2px!important;
+  }
+  .keyPerformanceIndicator p{
+    padding: 20px 30px!important;
+    font-size: 15px!important;
+  }
+  .dataModel p{
+    padding: 20px 60px!important;
+  }
+button.accordion{
+    font-size: 18px!important;
+    padding: 15px!important;
+  }
+  }
 
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
+    .navbar-right{
+        margin-top: 30px!important;
+    }
+    .logoHeader{
+        width: 70%;
+    }
    .carousel-caption{
      padding-bottom: 0px!important;
      left:45%!important;
@@ -735,7 +804,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
      padding:0px 0px!important;
     }
     .socialMediaHeading{ /* footer first row CONNECT US */
-      padding-left: 10px!important;
+      padding-left: 9px!important;
     }
     .manageInventory{
       padding: 35px 0px 0px 25px!important;
@@ -749,10 +818,37 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     .operationImage{
       padding-bottom: 0px!important;
     }
+    /* data analytic */
+    .imageData ul li{
+      font-size: 19px!important;
+      margin-top: 10px!important;
+    }
+    .dataManagement{
+      padding: 15px 0px!important;
+    }
+    .dataManagement h2{
+      font-size: 24px!important;
+    }
+    .keyPerformanceIndicator p{
+      padding: 20px 30px!important;
+    }
+    .dataModel p{
+      padding: 25px 30px!important;
+    }
+    button.accordion{
+      font-size: 18px!important;
+      padding: 15px!important;
+    }
 
 }
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-right{
+        margin-top: 30px!important;
+    }
+    .logoHeader{
+        width: 80%;
+    }
   .carousel-caption{
     padding-bottom: 0px!important;
     left:47%!important;
@@ -769,8 +865,29 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   .imageTop{
     padding-top: 30px;
   }
+  /* data analytic */
+  .imageData ul li{
+    font-size: 24px!important;
+    margin-top: 10px!important;
+  }
+  .dataManagement{
+    padding: 20px 0px!important;
+  }
+  .dataManagement h2{
+    font-size: 24!important;
+  }
+  .keyPerformanceIndicator p{
+    padding: 20px 50px!important;
+  }
+  .dataModel p{
+    padding: 25px 50px!important;
+  }
+  button.accordion{
+    font-size: 19px!important;
+    padding: 20px!important;
+  }
 }
-
+/* Medium Screen end */
 .preloader{
     position: fixed;
     top:0;
@@ -786,8 +903,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
     background: url('loading.gif') no-repeat;
 }
 a{
@@ -802,8 +919,8 @@ body{
 
 /* navbar css*/
 .logoHeader{
-  padding-top: 10px!important;
-  padding-bottom: 15px!important;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 .navbar-nav li a{
   font-family: 'Josefin Sans', Sans-serif!important;
@@ -820,7 +937,7 @@ body{
    display: block;
 }
 .navbar-right{
-  margin-top: 40px!important;
+  margin-top: 40px;
 }
 .navbar-default{
   background-color: transparent;
@@ -833,6 +950,7 @@ body{
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
     border: 0px solid transparent!important;
+    width:fit-content;
 }
 
 /* visitor#index Landing page */
@@ -863,15 +981,16 @@ body{
   background-color: #e2e2e2;
   padding:0px 30px;
   font-family: 'Josefin Sans', Sans-serif!important;
-}
+  }
 .contactDetails {
   padding-top: 10px;
 }
 .contactContent{
-  float: left;
-  margin-top: 5px;
-  margin-left: 10px;
+  position: relative;
+  top: 5px;
+  left: 10px;
 }
+
 .socialMediaHeading{
   padding-left:20px;
 }
@@ -879,6 +998,7 @@ body{
   padding-top: 20px;
   background-color: #ededed;
   font-family: 'Josefin Sans', Sans-serif!important;
+  font-size: 16px;
 }
 .maktosubHeading{
   margin-left: 10px;
@@ -932,15 +1052,16 @@ body{
 .explanation{
   color:#4f4e9d;
   padding-bottom: 30px;
+  font-size: 16px;
 }
  /* Team Heading */
 .teamHeader{
-  font-size: 20px;
+  font-size: 28px;
   font-family: 'Josefin Sans', Sans-serif;
   padding-top: 20px;
 }
 .teamSubHeader{
-  font-size: 20px;
+  font-size: 24px;
   color:#484786;
   padding-top: 20px;
   padding-left: 150px;
@@ -968,7 +1089,101 @@ body{
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 1, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* Contact Us--css-Start */
+#map {
+       height: 400px;
+       width: 100%;
+      }
+.mapLayout{
+ width: 100%;
+}
+.officeAddress{
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.officeAddress p{
+  font-size: 16px!important;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.officeAddress p span{
+  color:#4f4e9d;
+}
+/* Data Analytics Css-Start */
+.imageData{
+  position: absolute;
+top:45%;
+left:58%;
+color:#000;
+}
+.imageData ul{
+  list-style-type: none;
+}
+.imageData ul li{
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 20px;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.dataManagement{
+  background-color:#164163;
+  color: #ffffff;
+  padding: 40px 0px;
+}
+.dataManagement h2{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.keyPerformanceIndicator{
+   border-right: 2px solid #ffffff;
+  }
+
+.keyPerformanceIndicator p{
+  padding: 20px 80px;
+  font-size: 1.2em;
+  font-family: 'Josefin Sans', Sans-serif!important;
+}
+.dataModel{
+  margin-top: 10px;
+}
+.dataModel p{
+  padding: 25px 90px;
+  font-size: 1.2em;
+  font-family: 'Josefin Sans', Sans-serif!important;
+}
+.dataVisualization{
+  background-color: #a7cfe4;
+}
+.accordion .accord-header {
+    background-color:#a7cfe4;
+    color: #444;
+    cursor: pointer;
+    padding: 28px;
+    width: 100%;
+    border: 2px solid white;
+    text-align: left;
+    outline: none;
+    font-size: 23px;
+    font-family: 'Josefin Sans', Sans-serif;
+}
+
+.accord-content{
+    background-color: #ececec;
+    padding-bottom: 5px;
+  }
+html {
+    position: relative;
+    min-height: 100%;
+}
+.footer {
+    display:none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
+   
+/* line 1, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 body {
   background-color: #fff;
   color: #333;
@@ -978,62 +1193,62 @@ body {
   line-height: 18px;
 }
 
-/* line 10, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 10, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 16, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 16, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-/* line 22, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 22, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 a {
   color: #000;
 }
-/* line 25, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 25, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 a:visited {
   color: #666;
 }
-/* line 29, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 29, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 a:hover {
   color: #fff;
   background-color: #000;
 }
 
-/* line 35, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 35, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 th {
   padding-bottom: 5px;
 }
 
-/* line 39, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 39, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 td {
   padding: 0 5px 7px;
 }
 
-/* line 44, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 44, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 49, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 49, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 #notice {
   color: green;
 }
 
-/* line 53, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 53, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
-/* line 59, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 59, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -1041,7 +1256,7 @@ div.field, div.actions {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-/* line 66, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 66, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -1051,13 +1266,13 @@ div.field, div.actions {
   background-color: #c00;
   color: #fff;
 }
-/* line 76, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 76, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
 }
 
-/* line 82, /home/raja/Documents/rails/MaktoPortal/app/assets/stylesheets/scaffolds.scss */
+/* line 82, /home/raja/Downloads/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
 label {
   display: block;
 }
