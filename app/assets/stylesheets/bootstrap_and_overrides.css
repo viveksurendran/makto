@@ -268,6 +268,7 @@ body{
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
     border: 0px solid transparent!important;
+    width:fit-content;
 }
 
 /* visitor#index Landing page */
@@ -487,3 +488,16 @@ color:#000;
     background-color: #ececec;
     padding-bottom: 5px;
   }
+html {
+    position: relative;
+    min-height: 100%;
+}
+.footer {
+    display:none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
+   

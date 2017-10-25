@@ -1,5 +1,5 @@
 <div class="footer">
-
+ <div class="container-fluid">
 <!-- footer first row -->
 <div class="row firstFooter">
   <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12 contactDetails">
@@ -89,13 +89,24 @@
          </div>
    </div>
 </div>
-
 </div>
- <!-- <script>
-      $(document).ready(function()
-      {
-         $("#attach_box").click(function() {
-         $("#raja").hide();
-         });
-       });
-</script> -->
+</div>
+
+<script>
+function footerAlign() {
+  $('.footer').css('display', 'block');
+  $('.footer').css('height', 'auto');
+  var footerHeight = $('.footer').outerHeight();
+  $('body').css('padding-bottom', footerHeight);
+  $('.footer').css('height', footerHeight);
+}
+
+
+$(document).ready(function(){
+  footerAlign();
+});
+
+$( window ).resize(function() {
+  footerAlign();
+});
+</script>
