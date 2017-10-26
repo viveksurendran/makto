@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   devise_for :admins
   root :to => 'visitors#index'
   resources :blogs
-  devise_for :employees
   get 'carton', :to => 'static#carton'
   get 'company', :to => 'static#company'
   get 'team', :to => 'static#team'
