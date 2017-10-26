@@ -503,11 +503,11 @@ html {
    
 /* admin layout */
 .navbar-fixed-left {
-  width: 140px;
+  width: fit-content;
   position: fixed;
   border-radius: 0;
-  height: 100%;
-}
+  height: auto;
+ }
 
 .navbar-fixed-left .navbar-nav > li {
   float: none;  /* Cancel default li float: left */
@@ -515,11 +515,20 @@ html {
 }
 
 .navbar-fixed-left + .container {
-  padding-left: 160px;
+  padding-left: 10px;
 }
 
 /* On using dropdown menu (To right shift popuped) */
 .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
   margin-top: -50px;
   margin-left: 140px;
+}
+.navbar-brand > ul > li{
+  color: red!important;
+}
+.navbar-inverse .navbar-nav > li a:hover{
+ color: black!important ;
+}
+.navbar-inverse .navbar-nav > li a{
+ color: white!important ;
 }
