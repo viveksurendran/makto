@@ -14,6 +14,7 @@ H6=13*/
 /* default bootstrap default class using .class-name */
 /* custom css(self css) using camelcase format like .className */
 
+
 /* Scroll  */
 @media(max-width:330px){
   body{
@@ -23,6 +24,9 @@ min-width: 330px;
 }
 /* Extra Small */
 @media(max-width: 767px){
+    .cartonLogo{
+    width: 30%!important;
+  }
     .logoHeader{
         width: 50px;
         margin-left: 30px;
@@ -146,13 +150,13 @@ button.accordion{
      .mobilityFormLink h3{
       font-size: 19px!important;
      }
-   .caption {
+  .enterpriseImageData {
         width:50%!important;
         bottom: 4%!important;
         position: absolute;
         background:#5d73c0;
    }
- .caption h3 {
+ .enterpriseImageData h3 {
         color: #fff;
       padding-top: 5px!important;
     padding-bottom: 5px!important;
@@ -164,6 +168,12 @@ button.accordion{
 
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .cartonCustomNavbar-right{
+  position: relative;
+    top: -90px;
+    right: -10px;
+}
     .navbar-right{
         margin-top: 30px!important;
     }
@@ -220,13 +230,13 @@ button.accordion{
       padding: 15px!important;
     }
   /*enterprise css start for small screen*/
-.caption {
+.enterpriseImageData {
         width:40%!important;
         bottom: 14%!important;
         position: absolute;
         background:#5d73c0;
    }
- .caption h3 {
+ .enterpriseImageData h3 {
         color: #fff;
       padding-top: 8px!important;
     padding-bottom: 8px!important;
@@ -319,13 +329,13 @@ button.accordion{
   }
 
 /*enterprise mobility css start*/
-.caption {
+.enterpriseImageData {
         width:30%!important;
         bottom: 18%!important;
         position: absolute;
         background:#5d73c0;
    }
- .caption h3 {
+ .enterpriseImageData h3 {
         color: #fff;
       padding-top: 10px!important;
     padding-bottom: 10px!important;
@@ -662,13 +672,13 @@ html {
 }
  
  /* EnterPrise Mobility css*/
- .caption {
+ .enterpriseImageData {
         width:30%;
         bottom: 20%;
         position: absolute;
         background:#5d73c0;
    }
- .caption h3 {
+ .enterpriseImageData h3 {
         color: #fff;
         text-align: center;
         padding-top: 13px;
@@ -751,8 +761,7 @@ padding-bottom: 45px;
 
 
 
-/* admin layout */
-.navbar-fixed-left {
+/*.navbar-fixed-left {
   width: fit-content;
   position: fixed;
   border-radius: 0;
@@ -760,13 +769,12 @@ padding-bottom: 45px;
  }
 
 .navbar-fixed-left .navbar-nav > li {
-  float: none;  /* Cancel default li float: left */
+  float: none; 
   width: 139px;
 }
 
 
 
-/* On using dropdown menu (To right shift popuped) */
 .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
   margin-top: -50px;
   margin-left: 140px;
@@ -777,4 +785,4 @@ padding-bottom: 45px;
 }
 .navbar-inverse .navbar-nav > li a{
  color: white!important ;
-}
+}*/
