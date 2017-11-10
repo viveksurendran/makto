@@ -1,20 +1,21 @@
-<nav class="navbar navbar-default">
-     <div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-left">
 <%# if navbar collapse this part(image+button) will appear %>
          <div class="navbar-header">
-               <button type="button" class="navbar-toggle navButton" data-toggle="collapse" data-target="#myNavbar">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                      <span class="sr-only">Toggle navigation</span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                </button>
 
-               <%=  link_to 'ADMIN',"#", :class => 'navbar-brand' %>
+               <%=  link_to 'ADMIN',"#", :class => 'navbar-brand', :style => 'color:red!important;' %>
          </div>
          <div class="collapse navbar-collapse" id="myNavbar">
-               <ul class="nav navbar-nav navbar-right">
+               <ul class="nav navbar-nav">
       	             <%= render 'layouts/admin_navigationlinks' %>
                </ul>
          </div>
-     </div>
+     
 </nav>
+
+

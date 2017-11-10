@@ -6,7 +6,8 @@
         <% @blogs.each do |blog| %>
         <div class="makto_blog_title"><h2><%= link_to blog.title %></h2></div>
         <div class="makto_blog_desc"><%= raw blog.description.truncate(1000) %></div>
-        <div><%= social_share_button_tag(blog.title) %></div>
+        <div><%= social_share_button_tag(blog.title, :allow_sites => %w(twitter facebook linkedin)) %></div>
+
         <hr />
         <% end %>
     </div>

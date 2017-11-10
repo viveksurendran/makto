@@ -5,6 +5,15 @@
   =require twitter-bootstrap-static/sprites
   */
 
+/*  H1=32
+H2=30
+H3=19
+H4=16
+H5=14
+H6=13*/
+/* default bootstrap default class using .class-name */
+/* custom css(self css) using camelcase format like .className */
+
 /* Scroll  */
 @media(max-width:330px){
   body{
@@ -73,7 +82,7 @@ min-width: 330px;
   }
   /* data analytic */
   .imageData{
-    top: 45%!important;
+    top: 25%!important;
     left: 40%!important;
   }
   .imageData ul li{
@@ -98,6 +107,59 @@ button.accordion{
     font-size: 18px!important;
     padding: 15px!important;
   }
+ /* enterprise mobility css start*/
+     .mobilityHeading{
+      margin-top: 20px!important;
+    width: 90%!important;
+      opacity: 0.6!important;
+      right: 0%!important;
+      margin-left: 10px!important;
+     }
+     .mobilityHeading h2{
+        font-size: 24px!important;
+        margin: 0px 10px 0px 10px!important;
+     }
+     .mobilityContent ul li>p{
+      font-size: 14px!important;
+     }
+     .mobilitySalesHeading{
+      margin: 0px 0px!important;
+     }
+     .mobilitySalesHeading h2{
+        font-size: 24px!important;
+     }
+     .mobilitySalesContent li{
+      margin-bottom: 25px!important;
+     }
+     .mobilitySalesContent li>p{
+      font-size: 14px!important;
+        }
+     .customList{
+      position: relative!important;
+      top: -5px!important;
+     }
+     .mobilityFormLink{
+      margin-bottom: 10px!important;
+      margin-top: 0px!important;
+      margin:auto;
+     }
+     .mobilityFormLink h3{
+      font-size: 19px!important;
+     }
+   .caption {
+        width:50%!important;
+        bottom: 4%!important;
+        position: absolute;
+        background:#5d73c0;
+   }
+ .caption h3 {
+        color: #fff;
+      padding-top: 5px!important;
+    padding-bottom: 5px!important;
+      font-size:14px!important; 
+                  }
+
+ /*enterprise mobility css end*/
   }
 
 /* Small Screen */
@@ -157,6 +219,57 @@ button.accordion{
       font-size: 18px!important;
       padding: 15px!important;
     }
+  /*enterprise css start for small screen*/
+.caption {
+        width:40%!important;
+        bottom: 14%!important;
+        position: absolute;
+        background:#5d73c0;
+   }
+ .caption h3 {
+        color: #fff;
+      padding-top: 8px!important;
+    padding-bottom: 8px!important;
+      font-size:16px!important; 
+                  }
+ .mobilityHeading{
+  margin-top: 5px!important;
+}
+.mobilityHeading h2{
+  font-size: 18px!important;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+}
+.mobilityContent ul{
+  padding: 15px 15px 0px 15px!important;
+}
+.mobilityContent ul li{
+    padding-bottom: 3px!important;
+}
+.mobilityContent ul li>p{
+  font-size: 12px!important;
+      top: 0px!important;
+}
+.mobilitySalesHeading{
+  margin: 20px 0px!important;
+}
+.mobilitySalesHeading h2{
+  font-size: 18px!important;
+}
+.mobilitySalesContent li>p{
+  font-size: 12px!important;
+}
+.customList{
+    position: relative!important;
+    top: -2px!important;
+}
+.mobilityFormLink{
+  margin-top: 20px!important;
+}
+.mobilityFormLink h3{
+  font-size: 18px!important;
+   /*enterprise css end for small screen*/
+}
 
 }
 /* Medium Screen */
@@ -204,7 +317,53 @@ button.accordion{
     font-size: 19px!important;
     padding: 20px!important;
   }
+
+/*enterprise mobility css start*/
+.caption {
+        width:30%!important;
+        bottom: 18%!important;
+        position: absolute;
+        background:#5d73c0;
+   }
+ .caption h3 {
+        color: #fff;
+      padding-top: 10px!important;
+    padding-bottom: 10px!important;
+      font-size:18px!important; 
+                  }
+.mobilityHeading{
+  margin-top: 15px!important;
 }
+.mobilityHeading h2{
+  font-size: 19px!important;
+}
+.mobilityContent ul{
+  padding: 15px 15px 0px 15px!important;
+}
+.mobilityContent ul li{
+    padding-bottom: 3px!important;
+}
+.mobilityContent ul li>p{
+  font-size: 14px!important;
+}
+.mobilitySalesHeading{
+  margin: 20px 0px!important;
+}
+.mobilitySalesHeading h2{
+  font-size: 19px!important;
+}
+.mobilitySalesContent li>p{
+  font-size: 14px!important;
+}
+.customList{
+      position: relative!important;
+    top: -2px!important;
+}
+.mobilityFormLink{
+  margin-top: 20px!important;
+}
+}
+/*enterprise mobility css end */
 /* Medium Screen end */
 .preloader{
     position: fixed;
@@ -478,7 +637,7 @@ color:#000;
     cursor: pointer;
     padding: 28px;
     width: 100%;
-    border: 2px solid white;
+    border-bottom: 1px solid white;
     text-align: left;
     outline: none;
     font-size: 23px;
@@ -501,7 +660,97 @@ html {
     height: auto;
     width: 100%;
 }
-   
+ 
+ /* EnterPrise Mobility css*/
+ .caption {
+        width:30%;
+        bottom: 20%;
+        position: absolute;
+        background:#5d73c0;
+   }
+ .caption h3 {
+        color: #fff;
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 13px;
+             }
+
+.mobilitySectionImage{
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+.mobilitySectionContent{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+   /* background-color: #f7f7f6;*/
+}
+.mobilityHeading{
+  background-color: #d3dde6;
+  margin-top: 30px;
+  width: 110%;
+  position: relative;
+  right: 14%;
+  opacity: 0.6;
+ }
+.mobilityHeading h2{
+   margin: 0px 10px 0px 150px;
+   padding-top:10px;
+   padding-bottom: 10px;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.mobilityContent ul{
+  list-style-type: none;
+  padding: 30px 15px 0px 15px;
+}
+.mobilityContent ul li{
+ background-image: url('arrow.png');
+background-repeat: no-repeat;
+padding-bottom: 10px;
+}
+.mobilityContent ul li>p{
+  margin-left: 50px;
+  line-height: 1.2;
+  font-size: 16px;
+  font-family: Arial;
+  position: relative;
+  top: -5px;
+}
+.mobilitySalesHeading{
+  font-family: 'Josefin Sans', Sans-serif;
+  margin: 30px 0px;
+}
+.mobilitySalesContent {
+  list-style-type: none;
+}
+.mobilitySalesContent li{
+   background-image: url('arrow.png');
+background-repeat: no-repeat;
+height: 40px;
+padding-bottom: 45px;
+}
+.mobilitySalesContent li>p{
+  font-size: 16px;
+  font-family: Arial;
+  margin-left: 50px;
+  position: relative;
+  top: 5px;
+   }
+.mobilityFormLink{
+  width: 80%;
+  height: 150px;
+  margin-top:50px; 
+  background-color: #5d73c0;
+}
+.mobilityFormLink h3{
+  color:white;
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+
+
+
+
 /* admin layout */
 .navbar-fixed-left {
   width: fit-content;
@@ -515,18 +764,14 @@ html {
   width: 139px;
 }
 
-.navbar-fixed-left + .container {
-  padding-left: 10px;
-}
+
 
 /* On using dropdown menu (To right shift popuped) */
 .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
   margin-top: -50px;
   margin-left: 140px;
 }
-.navbar-brand > ul > li{
-  color: red!important;
-}
+
 .navbar-inverse .navbar-nav > li a:hover{
  color: black!important ;
 }

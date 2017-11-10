@@ -3,4 +3,6 @@ class StaticController < ApplicationController
   end
   def company
   end
+  def enterprise
+  end
 end
