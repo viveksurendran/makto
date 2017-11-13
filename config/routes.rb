@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   get 'carton', :to => 'static#carton'
   get 'company', :to => 'static#company'
   get 'team', :to => 'static#team'
-  get 'contactUs', :to => 'static#contactus'
+  get 'contactus', :to => 'static#contactus'
   get 'enterprise', :to => 'static#enterprise'
+  get 'business', :to => 'static#business'
   get 'data-analytics', :to => 'static#analytics'
   get 'visitors/index'
     authenticate :admin do

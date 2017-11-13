@@ -5,4 +5,6 @@ class StaticController < ApplicationController
   end
   def enterprise
   end
+  def contactus
+  end
 end
