@@ -3,9 +3,9 @@
 	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<i class="fa fa-angle-down" style="font-size:16px;margin-left: 3px;"></i>
     </a>
      <ul class="dropdown-menu">
-        <li><%= link_to 'Data Visualisation',href="data-analytics#data-visualization" %></li>
-        <li><%= link_to 'Data Modeling', href="data-analytics#data-modeling" %></li>
-       <li><%= link_to 'Enterprise Mobility', href= "Enterprise"%></li>
+        <li><%= link_to 'Data Visualisation', data_analytics_path(anchor: 'data-visualization')%></li>
+        <li><%= link_to 'Data Modeling', data_analytics_path(anchor: 'data-modeling') %></li>
+       <li><%= link_to 'Enterprise Mobility', enterprise_path %></li>
        <li><%= link_to 'Business Process Automation' %></li>
     </ul>
 </li>

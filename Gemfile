@@ -20,6 +20,7 @@ group :production do
   gem 'thin'
 end
 group :production do
+   gem 'therubyracer-heroku', '0.8.1.pre3'
    gem 'pg'
    gem 'rails_12factor'
 end
