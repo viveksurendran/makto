@@ -905,7 +905,7 @@ button.accordion{
 .businessProcessExplanation {
     margin-top: 30px!important;
 }
-
+}
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -1293,7 +1293,6 @@ margin-bottom: 0px;
   top: 5px;
   left: 10px;
 }
-
 .socialMediaHeading{
   padding-left:20px;
 }
@@ -1344,7 +1343,6 @@ margin-bottom: 0px;
 .cartonImageFirstRow{
   padding-top: 30px;
 }
-
 .cartonImageSecondRow{
   padding-bottom: 30px;
 }
@@ -1526,8 +1524,7 @@ html {
 .mobilitySectionContent{
     padding-left: 0px!important;
     padding-right: 0px!important;
-   /* background-color: #f7f7f6;*/
-}
+  }
 .mobilityHeading{
   background-color: #d3dde6;
   margin-top: 30px;
@@ -1633,10 +1630,7 @@ padding-bottom: 45px;
  .requirementDefinitionDocumentation{
   padding-top: 50px;
  }
-/*.businessProcessImagesFirstRow{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}*/
+
 .businessProcessImageAndExplanation{
   background-color: #5d73c0;
 }
