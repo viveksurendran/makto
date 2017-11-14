@@ -555,7 +555,7 @@ body{
 }
 
 /* visitor#index Landing page */
-.cartonSliderText{
+/*.cartonSliderText{
   position: absolute;
   top: 30%;
   left: 10%;
@@ -574,7 +574,7 @@ margin-bottom: 0px;
   position: absolute;
   right: 30%;
   bottom: 50%;
-}
+}*/
 .carousel-caption {
     left: 47%;
     right: 0%;

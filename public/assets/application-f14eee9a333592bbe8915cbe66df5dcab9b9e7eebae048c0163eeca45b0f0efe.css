@@ -686,18 +686,15 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
   */
 
-/*  H1=32
-H2=30
-H3=19
-H4=16
-H5=14
-H6=13*/
+
 /* default bootstrap default class using .class-name */
 /* custom css(self css) using camelcase format like .className */
+/*normal button is used in this project so we declare globally btn borderradius*/
 
-
-/* Scroll  */
-
+.btn{
+  border-radius: 0px!important;
+}
+/* horizontal scroll bar will appear when width is less than 330px */
 @media(max-width:330px){
   body{
 overflow-x: scroll;
@@ -719,6 +716,24 @@ min-width: 330px;
         margin-top: 20px!important;
         margin-right:30px;
     }
+  /*  landing page css*/
+  .cartonSliderText{
+  top: 20%!important;
+  left: 5%!important;
+}
+.cartonSliderText h1{
+font-size: 18px!important;
+}
+.cartonSliderText p{
+  font-size: 13px!important;
+ }
+.cartonSliderLogo{
+  bottom: 30%!important;
+  right: 10%!important;
+}
+.cartonSliderLogo img{
+  height: 40px!important;  
+}
   .carousel-caption{
     padding-bottom: 0px!important;
     left:40%!important;
@@ -740,6 +755,23 @@ min-width: 330px;
   .cartonContent{
     font-size: 16px!important;
   }
+ /* company page for extra small css start*/
+ .whyMaktoHeading{
+      background-color:#382f2d;
+      width: 70%;
+    margin-top: 30px;
+    position: relative;
+    right: 0%!important;
+    opacity: 0.6;
+}
+.whyMaktoHeading h2{
+  color: #fff;
+  text-align: center!important;
+  padding: 10px 15px 10px 0px; 
+}
+.explanation{
+  margin-left: 30px!important;
+}
   .teamSubHeader{
     padding-left: 20px!important;
   }
@@ -844,10 +876,36 @@ button.accordion{
     padding-bottom: 5px!important;
       font-size:14px!important; 
                   }
-
- /*enterprise mobility css end*/
+/*enterprise mobility css end*/
+/*business process managment css*/
+.businessImageData h3 {
+    margin-top: 10px!important;
+    padding-top: 0px!important;
+    padding-left: 10px!important;
+   padding-bottom: 0px!important; 
+}
+.businessProcessImages {
+       margin-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+.businessProcessImages h1{
+  font-size: 22px!important;
+  }
+.businessProcessImages h2{
+  font-size: 18px!important;
   }
 
+.defineProcesses {
+    padding-top: 10px!important;
+    padding-bottom: 10px;
+}
+.processAutomation{
+  border-bottom: 1px solid #c2c2c2!important;
+}
+.businessProcessExplanation {
+    margin-top: 30px!important;
+}
+}
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -862,6 +920,12 @@ button.accordion{
     .logoHeader{
         width: 70%;
     }
+    /* landing page css */
+.cartonSliderLogo{
+  position: absolute;
+  right: 10%!important;
+  bottom: 40%!important;
+}
    .carousel-caption{
      padding-bottom: 0px!important;
      left:45%!important;
@@ -881,6 +945,26 @@ button.accordion{
     .manageInventory{
       padding: 35px 0px 0px 25px!important;
     }
+   /* company page*/
+     .whyMaktoHeading{
+      background-color:#382f2d;
+      margin-top: 0px!important;
+      width: 80%!important;
+     position: relative!important;
+    right: 25%!important;
+}
+.whyMaktoHeading h2{
+  color: #fff;
+  text-align: right!important;
+  padding: 10px 15px 10px 0px; 
+ font-size: 26px!important;
+}
+.explanation{
+  margin-left: 10px!important;
+      padding-top: 0px!important; 
+     padding-bottom: 10px!important; 
+    font-size: 16px!important;
+}
     .teamSubHeader{
       padding-left: 20px!important;
     }
@@ -960,7 +1044,11 @@ button.accordion{
 }
 .mobilityFormLink h3{
   font-size: 18px!important;
-   /*enterprise css end for small screen*/
+  }
+ /*enterprise css end for small screen*/
+/*business process management css*/
+.businessProcessExplanation {
+    margin-top: 30px!important;
 }
 
 }
@@ -972,6 +1060,12 @@ button.accordion{
     .logoHeader{
         width: 80%;
     }
+/* landing page css */
+.cartonSliderLogo{
+  position: absolute;
+  right: 10%!important;
+  bottom: 40%!important;
+}
   .carousel-caption{
     padding-bottom: 0px!important;
     left:47%!important;
@@ -982,6 +1076,21 @@ button.accordion{
   .manageInventory{  /* cartonpage second row Carton Definition */
     padding: 80px 0px 0px 100px!important;
   }
+  /*company page css for medium screen*/
+  .whyMaktoHeading{
+      background-color:#382f2d;
+      width: 70%!important;
+     position: relative!important;
+    right: 25%!important;
+}
+.whyMaktoHeading h2{
+  color: #fff;
+  text-align: right!important;
+  padding: 10px 15px 10px 0px; 
+}
+.explanation{
+  margin-left: 30px!important;
+}
   .teamSubHeader{
     padding-left: 20px!important;
   }
@@ -1054,8 +1163,12 @@ button.accordion{
 .mobilityFormLink{
   margin-top: 20px!important;
 }
-}
 /*enterprise mobility css end */
+/*business process management css*/
+.businessProcessExplanation {
+    margin-top: 70px!important;
+}
+}
 /* Medium Screen end */
 .preloader{
     position: fixed;
@@ -1124,6 +1237,26 @@ body{
 }
 
 /* visitor#index Landing page */
+/*.cartonSliderText{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.cartonSliderText h1{
+font-weight: bold;
+font-size: 50px;
+line-height: 0.8;
+margin-bottom: 0px;
+}
+.cartonSliderText p{
+  font-size: 18px;
+  line-height: 1.2;
+}
+.cartonSliderLogo{
+  position: absolute;
+  right: 30%;
+  bottom: 50%;
+}*/
 .carousel-caption {
     left: 47%;
     right: 0%;
@@ -1160,18 +1293,22 @@ body{
   top: 5px;
   left: 10px;
 }
-
 .socialMediaHeading{
   padding-left:20px;
 }
 .secondFooter{
   padding-top: 20px;
   background-color: #ededed;
-  font-family: 'Josefin Sans', Sans-serif!important;
   font-size: 16px;
+}
+.secondFooter h4{
+  font-family: 'Josefin Sans', Sans-serif!important;
 }
 .maktosubHeading{
   margin-left: 10px;
+}
+.maktosubHeading a{
+  font-family: Arial;
 }
 .sequence{
   padding-top: 40px;
@@ -1180,8 +1317,7 @@ body{
 .thirdFooter{
    padding-top: 40px;
    background-color: #ededed;
-   font-family: Arial;
-}
+ }
 .maktofooterStyle{ /* Terms & Conditions */
   padding-right: 5px;
   border-right:2px solid black;
@@ -1194,10 +1330,10 @@ body{
 .cartonHeading{
   font-family: 'Josefin Sans', Sans-serif!important;
   color:#7dcbf1;
+  font-size: 40px;
 }
 .cartonContent{
-  font-weight: bold;
-  font-family: Arial;
+   font-family: Arial;
   font-size: 16px;
 }
 .imageFullScreen{
@@ -1207,13 +1343,25 @@ body{
 .cartonImageFirstRow{
   padding-top: 30px;
 }
-
 .cartonImageSecondRow{
   padding-bottom: 30px;
 }
 
 /* company page css start */
 /* company first row */
+.whyMaktoHeading{
+      background-color:#382f2d;
+      width: 70%;
+    margin-top: 30px;
+    position: relative;
+    right: 34%;
+    opacity: 0.6;
+}
+.whyMaktoHeading h2{
+  color: #fff;
+  text-align: right;
+  padding: 10px 15px 10px 0px; 
+}
 .maktoBrief{
   background-color: #fafafa;
  font-family: 'Josefin Sans', Sans-serif;
@@ -1221,8 +1369,10 @@ body{
  /* company first row Why Makto content */
 .explanation{
   color:#4f4e9d;
+  margin-left: 80px;
+  padding-top: 10px;
   padding-bottom: 30px;
-  font-size: 16px;
+  font-size: 18px;
 }
  /* Team Heading */
 .teamHeader{
@@ -1374,8 +1524,7 @@ html {
 .mobilitySectionContent{
     padding-left: 0px!important;
     padding-right: 0px!important;
-   /* background-color: #f7f7f6;*/
-}
+  }
 .mobilityHeading{
   background-color: #d3dde6;
   margin-top: 30px;
@@ -1440,8 +1589,74 @@ padding-bottom: 45px;
   font-family: 'Josefin Sans', Sans-serif;
 }
 
+/*BUSSINESS PROCESS MANAGEMENT CSS*/
+/*CSS FOR LARGE SCREEN ABOVE 1200PX*/
+ .businessImageData {
+        width:30%;
+        bottom: 20%;
+        right: 0%;
+        position: absolute;
+        background:#a3a3a3;
+   }
+ .businessImageData h3 {
+        color: #fff;
+        text-align: left;
+        padding-top: 13px;
+        padding-left: 20px;
+        padding-bottom: 13px;
+             }
+.businessProcessImages{
+  font-family: 'Josefin Sans', Sans-serif;
+  margin-top: 50px;
+  padding-bottom: 50px;
+ }
+.businessProcessImages h1{
+  text-align: center;
+}
+.defineProcesses{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c2c2c2;
+  border-right:  1px solid #c2c2c2;
+}
+.integrateExistingSystem{
+  padding-top: 50px;
+    border-bottom: 1px solid #c2c2c2;
+ }
+ .processAutomation{
+  padding-top: 50px;
+  border-right:  1px solid #c2c2c2;
+ }
+ .requirementDefinitionDocumentation{
+  padding-top: 50px;
+ }
 
+.businessProcessImageAndExplanation{
+  background-color: #5d73c0;
+}
+.businessProcessExplanation{
+  margin-top: 100px;
+}
 
+.businessProcessExplanation ul li{
+  list-style-type: none;
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Josefin Sans', Sans-serif;
+  margin-bottom: 20px; 
+}
+.businessProcessButtonRow{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.businessProcessFormButton {
+    background-color: #a1a1a1!important;
+}
+
+.businessProcessFormButton a{
+  color: #fff!important;
+  font-family: 'Josefin Sans', Sans-serif;
+}
 
 /*.navbar-fixed-left {
   width: fit-content;
