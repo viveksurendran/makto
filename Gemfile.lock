@@ -191,7 +191,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    therubyracer-heroku (0.8.1.pre3)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -248,7 +247,6 @@ DEPENDENCIES
   social-share-button (= 0.2.1)
   spring
   spring-watcher-listen (~> 2.0.0)
-  therubyracer-heroku (= 0.8.1.pre3)
   thin
   tinymce-rails
   turbolinks (~> 5)
