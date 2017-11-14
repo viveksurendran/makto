@@ -905,7 +905,7 @@ button.accordion{
 .businessProcessExplanation {
     margin-top: 30px!important;
 }
-
+}
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -1050,6 +1050,7 @@ button.accordion{
 .businessProcessExplanation {
     margin-top: 30px!important;
 }
+
 }
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1276,6 +1277,8 @@ margin-bottom: 0px;
 .top{
   padding: 30px 0px;
 }
+
+
 /* footer css */
 .firstFooter{
   background-color: #e2e2e2;
@@ -1414,15 +1417,22 @@ margin-bottom: 0px;
 .mapLayout{
  width: 100%;
 }
-.officeAddress{
+.contactusForm{
   font-family: 'Josefin Sans', Sans-serif;
 }
-.officeAddress p{
-  font-size: 16px!important;
+.contactusForm h2{
+    text-align: center;
+}
+.office{
+  text-align: left;
+  margin-top: 60px;
+}
+.office h2{
+  color: #00acee;
   font-family: 'Josefin Sans', Sans-serif;
 }
-.officeAddress p span{
-  color:#4f4e9d;
+.office p{
+  font-size: 16px;
 }
 /* Data Analytics Css-Start */
 .imageData{
