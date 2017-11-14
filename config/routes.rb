@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :admins
   root :to => 'visitors#index'
   resources :blogs
+  resources :static
+  post '/contactus' => 'static#contactus'
   get 'carton', :to => 'static#carton'
   get 'company', :to => 'static#company'
   get 'team', :to => 'static#team'
