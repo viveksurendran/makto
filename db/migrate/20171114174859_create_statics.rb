@@ -1,6 +1,6 @@
-class CreateContacts < ActiveRecord::Migration[5.1]
+class CreateStatics < ActiveRecord::Migration[5.1]
   def change
-    create_table :contacts do |t|
+    create_table :statics do |t|
       t.string :name
       t.string :email
       t.integer :phone

@@ -1,34 +1,34 @@
 <h2>Contact Us Form </h2>
-<%= form_for  :contact, :html => {:class => "form-horizontal center"} do |f| %>
+<%= form_for  :static, :html => {:class => "form-horizontal center"} do |f| %>
       <div class="form-group">
-        <%= f.label :name, "NAME:", class: "col-lg-4 control-label"%>
-        <div class="col-lg-8">
+        <%= f.label :name, "NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9">
           <%= f.text_field :name, class: "form-control",
-          :minlength=>"5", :maxlength=>"10", required: true %>
+          :minlength=>"5", :maxlength=>"30", required: true %>
         </div>
      </div>
        <div class="form-group">
-        <%= f.label :email, "EMAIL:", class: "col-lg-4 control-label"   %>
-        <div class="col-lg-8">
+        <%= f.label :email, "EMAIL:", class: "col-lg-4 col-md-4 col-sm-3 control-label"   %>
+        <div class="col-lg-8 col-md-8 col-sm-9">
           <%= f.email_field :email, class: "form-control", required: true %>
         </div>
       </div>
        <div class="form-group">
-        <%= f.label :phone, "PHONE:", class: "col-lg-4 control-label" %>
-        <div class="col-lg-8">
-          <%= f.text_field :phone, class: "form-control", :minlength=>"10", :maxlength=>"10", required: true %>
+        <%= f.label :phone, "PHONE:", class: "col-lg-4 col-md-4 col-sm-3 control-label" %>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.text_field :phone, class: "form-control", :minlength=>"10", :maxlength=>"11", required: true %>
         </div>
       </div>
       <div class="form-group">
-        <%= f.label :enquiry, "ENQUIRY:", class: "col-lg-4 control-label"%>
-        <div class="col-lg-8">
-          <%= f.text_field :enquiry, class: "form-control",:minlength=>"5", :maxlength=>"10", required: true %>
+        <%= f.label :enquiry, "ENQUIRY:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.text_field :enquiry, class: "form-control",:minlength=>"5", :maxlength=>"30", required: true %>
         </div>
       </div>
        <div class="form-group">
-        <%= f.label :description, "DESCRIPTION:", class: "col-lg-4 control-label" %>
-        <div class="col-lg-8">
-          <%= f.text_area :description, class: "form-control ",:minlength=>"25", :maxlength=>"100",required: true %>
+        <%= f.label :description, "DESCRIPTION:", class: "col-lg-4 col-md-4 col-sm-3 control-label" %>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.text_area :description, class: "form-control ",:minlength=>"25", :maxlength=>"250",required: true %>
         </div>
       </div>
      

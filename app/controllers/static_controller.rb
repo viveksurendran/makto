@@ -6,36 +6,25 @@ class StaticController < ApplicationController
   def enterprise
   end
  
-  def contactus
-   @contact = Contact.new
-  end
-
-def create
-  @contact = Contact.new(contact_params)
-   if @contact.save
-    flash[:notice] = "Form is sucessfully submitted"
-     ContactUsMailer.form(@page).deliver_later
-    redirect_to visitors_index_path
-
-   else
-    flash[:notice] = "please fill a valid information"
-    redirect_to  contactus_path
-   end
+  
+def contactus
+    @static = Static.new
 end
+  def create
+    @static = Static.new(contactus_params)
 
-# def destroy
-#    @page = Page.find(params[:id])
-#     if @page.destroy
-#        flash[:notice] = "deleted success"
-#        redirect_to pages_path
-#     else
-#        flash[:notice] = "Error"
-#     end
-# end
+   if @static.save
+    flash[:notice] = "raja"
+    redirect_to visitors_index_path
+   else
+    flash[:notice] = "error"
+   end
+ end
 
+ 
 
 private
-def contact_params
-    params.require(:contactus).permit(:name, :email, :phone, :enquiry, :description)
-end
+  def contactus_params
+    params.require(:static).permit(:name,:email, :phone, :enquiry, :description)
+  end
 end

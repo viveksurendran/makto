@@ -12,6 +12,9 @@
 .btn{
   border-radius: 0px!important;
 }
+.form-control{
+  font-family: Arial;
+}
 /* horizontal scroll bar will appear when width is less than 330px */
 @media(max-width:330px){
   body{
@@ -222,6 +225,10 @@ button.accordion{
 }
 .businessProcessExplanation {
     margin-top: 30px!important;
+}
+/*contact us css for mobile screen*/
+.office {
+      margin-top: 25px!important;
 }
 }
 /* Small Screen */
