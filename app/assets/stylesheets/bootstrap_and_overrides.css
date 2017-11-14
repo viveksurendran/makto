@@ -50,7 +50,7 @@ font-size: 18px!important;
   right: 10%!important;
 }
 .cartonSliderLogo img{
-  width:  50%;  
+  height: 40px!important;  
 }
   .carousel-caption{
     padding-bottom: 0px!important;
@@ -194,9 +194,35 @@ button.accordion{
     padding-bottom: 5px!important;
       font-size:14px!important; 
                   }
-
- /*enterprise mobility css end*/
+/*enterprise mobility css end*/
+/*business process managment css*/
+.businessImageData h3 {
+    margin-top: 10px!important;
+    padding-top: 0px!important;
+    padding-left: 10px!important;
+   padding-bottom: 0px!important; 
+}
+.businessProcessImages {
+       margin-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+.businessProcessImages h1{
+  font-size: 22px!important;
   }
+.businessProcessImages h2{
+  font-size: 18px!important;
+  }
+
+.defineProcesses {
+    padding-top: 10px!important;
+    padding-bottom: 10px;
+}
+.processAutomation{
+  border-bottom: 1px solid #c2c2c2!important;
+}
+.businessProcessExplanation {
+    margin-top: 30px!important;
+}
 
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -336,7 +362,11 @@ button.accordion{
 }
 .mobilityFormLink h3{
   font-size: 18px!important;
-   /*enterprise css end for small screen*/
+  }
+ /*enterprise css end for small screen*/
+/*business process management css*/
+.businessProcessExplanation {
+    margin-top: 30px!important;
 }
 
 }
@@ -451,8 +481,12 @@ button.accordion{
 .mobilityFormLink{
   margin-top: 20px!important;
 }
-}
 /*enterprise mobility css end */
+/*business process management css*/
+.businessProcessExplanation {
+    margin-top: 70px!important;
+}
+}
 /* Medium Screen end */
 .preloader{
     position: fixed;
@@ -900,10 +934,27 @@ padding-bottom: 45px;
 .businessProcessImages h1{
   text-align: center;
 }
-.businessProcessImagesFirstRow{
+.defineProcesses{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c2c2c2;
+  border-right:  1px solid #c2c2c2;
+}
+.integrateExistingSystem{
+  padding-top: 50px;
+    border-bottom: 1px solid #c2c2c2;
+ }
+ .processAutomation{
+  padding-top: 50px;
+  border-right:  1px solid #c2c2c2;
+ }
+ .requirementDefinitionDocumentation{
+  padding-top: 50px;
+ }
+/*.businessProcessImagesFirstRow{
   margin-top: 50px;
   margin-bottom: 50px;
-}
+}*/
 .businessProcessImageAndExplanation{
   background-color: #5d73c0;
 }

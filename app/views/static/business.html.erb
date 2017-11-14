@@ -11,28 +11,31 @@
 
 <!-- second row -->
 <div class="row businessProcessImages">
-   <h1>We believe business process efficiency drives <br>organizational growth</h1>  <!-- business process heading -->
-   <div class="row businessProcessImagesFirstRow">
-     <div style= "border-right: 1px solid #c2c2c2;"class="col-lg-6">
+<!-- business process heading -->
+   <h1>We believe business process efficiency drives <br>organizational growth</h1>
+ <!--  define processes -->  
+     <div class="col-lg-6 col-md-6 col-sm-6 defineProcesses">
       <center>
           <%= image_tag "defineprocess.png", :class => 'img-responsive' %>
           <h2>Define processes</h2>
       </center>
      </div>
-     <div class="col-lg-6">
+ <!--  integrate existing system -->
+     <div class="col-lg-6 col-md-6 col-sm-6 integrateExistingSystem">
       <center>
          <%= image_tag "discsys.png", :class => 'img-responsive' %>
           <h2>Integrate existing systems</h2> 
        </center>
      </div>
-   </div>
-    <div style= "border-right: 1px solid #c2c2c2;" class="col-lg-6">
+ <!-- process automation -->
+     <div  class="col-lg-6 col-md-6 col-sm-6 processAutomation">
       <center>
        <%= image_tag "processautomate.png", :class => 'img-responsive' %>
         <h2>Process Automation</h2>
       </center>
     </div>
-    <div class="col-lg-6">
+<!--    Requirement-Definition-Documentation -->
+    <div class="col-lg-6 col-md-6 col-sm-6 requirementDefinitionDocumentation">
       <center>
        <%= image_tag "reqdoc.png", :class => 'img-responsive' %>
         <h2>Requirement-Definition-Documentation</h2>
@@ -41,10 +44,10 @@
 </div>
 <!-- Third Row -->
 <div class="row businessProcessImageAndExplanation">
-    <div class="col-lg-4 imageFullScreen">
+    <div class="col-lg-4 col-md-5 col-sm-5 imageFullScreen">
     	<%= image_tag "bpm-desc.jpg", :class => 'img-responsive' %>
     </div>
-    <div class="col-lg-6 businessProcessExplanation">
+    <div class="col-lg-6 col-md-7 col-sm-7 businessProcessExplanation">
     	<ul>
     		<li>Streamline processess effectively by integrating existing disconnected systems.</li>
     		<li>Automate manual processess and monitor business operations.</li>
