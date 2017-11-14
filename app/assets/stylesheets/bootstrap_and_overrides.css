@@ -23,7 +23,7 @@ min-width: 330px;
 @media(max-width: 767px){
     .cartonLogo{
     width: 30%!important;
-  }
+
     .logoHeader{
         width: 50px;
         margin-left: 30px;
@@ -34,108 +34,108 @@ min-width: 330px;
         margin-top: 20px!important;
         margin-right:30px;
     }
-  /*  landing page css*/
-  .cartonSliderText{
-  top: 20%!important;
-  left: 5%!important;
-}
-.cartonSliderText h1{
-font-size: 18px!important;
-}
-.cartonSliderText p{
-  font-size: 13px!important;
- }
-.cartonSliderLogo{
-  bottom: 30%!important;
-  right: 10%!important;
-}
-.cartonSliderLogo img{
-  height: 40px!important;  
-}
-  .carousel-caption{
-    padding-bottom: 0px!important;
-    left:40%!important;
-  }
-  .carousel-caption h1{
-    font-size: 15px!important;
-  }
-  .top{   /*  visitors#index products & solutions*/
-    font-size: 16px!important;
-    padding: 0px 0px!important;
-      }
-  .manageInventory{  /* cartonpage second row Carton Definition */
-    padding: 0px 0px 0px 0px!important;
-    text-align: center;
-  }
-  .cartonHeading{
-    font-size: 26px!important;
-      }
-  .cartonContent{
-    font-size: 16px!important;
-  }
- /* company page for extra small css start*/
- .whyMaktoHeading{
-      background-color:#382f2d;
-      width: 70%;
-    margin-top: 30px;
-    position: relative;
-    right: 0%!important;
-    opacity: 0.6;
-}
-.whyMaktoHeading h2{
-  color: #fff;
-  text-align: center!important;
-  padding: 10px 15px 10px 0px; 
-}
-.explanation{
-  margin-left: 30px!important;
-}
-  .teamSubHeader{
-    padding-left: 20px!important;
-  }
-  .maktofooterStyle{
-    padding-right: 3px!important;
-  }
-  .firstFooter {
-     padding: 0px 0px!important;
-    text-align: center;
-  }
-  .emailRow{
-    margin-left: 10px;
-  }
-  .socialMedia{
-    margin-left: 45px;
-  }
-  .socialMediaHeading{
-    padding-left: 10px!important;
-  }
-  .thirdFooter{
-    padding-top: 10px!important;
-  }
-  .products h5{
-      padding-bottom: 10px!important;
-      padding-top: 10px;
-  }
-  /* data analytic */
-  .imageData{
-    top: 25%!important;
-    left: 40%!important;
-  }
-  .imageData ul li{
-    font-size: 13px!important;
-    margin-top: 0px!important;
-  }
-  .dataManagement{
-    padding: 15px 0px!important;
-  }
-  .dataManagement h2{
+   /*  landing page css*/
+    .cartonSliderText{
+      top: 20%!important;
+      left: 5%!important;
+    }
+    .cartonSliderText h1{
     font-size: 18px!important;
-    margin-left: 2px!important;
-  }
-  .keyPerformanceIndicator p{
-    padding: 20px 30px!important;
-    font-size: 15px!important;
-  }
+    }
+    .cartonSliderText p{
+      font-size: 13px!important;
+     }
+    .cartonSliderLogo{
+      bottom: 30%!important;
+      right: 10%!important;
+    }
+    .cartonSliderLogo img{
+      height: 40px!important;  
+    }
+    .carousel-caption{
+      padding-bottom: 0px!important;
+      left:40%!important;
+    }
+    .carousel-caption h1{
+      font-size: 15px!important;
+    }
+    .top{   /*  visitors#index products & solutions*/
+      font-size: 16px!important;
+      padding: 0px 0px!important;
+        }
+    .manageInventory{  /* cartonpage second row Carton Definition */
+      padding: 0px 0px 0px 0px!important;
+      text-align: center;
+    }
+    .cartonHeading{
+      font-size: 26px!important;
+        }
+    .cartonContent{
+      font-size: 16px!important;
+    }
+    /* company page for extra small css start*/
+   .whyMaktoHeading{
+        background-color:#382f2d;
+        width: 70%;
+      margin-top: 30px;
+      position: relative;
+      right: 0%!important;
+      opacity: 0.6;
+    }
+    .whyMaktoHeading h2{
+      color: #fff;
+      text-align: center!important;
+      padding: 10px 15px 10px 0px; 
+    }
+    .explanation{
+      margin-left: 30px!important;
+    }
+    .teamSubHeader{
+      padding-left: 20px!important;
+    }
+    .maktofooterStyle{
+      padding-right: 3px!important;
+    }
+    .firstFooter {
+       padding: 0px 0px!important;
+      text-align: center;
+    }
+    .emailRow{
+      margin-left: 10px;
+    }
+    .socialMedia{
+      margin-left: 45px;
+    }
+    .socialMediaHeading{
+      padding-left: 10px!important;
+    }
+    .thirdFooter{
+      padding-top: 10px!important;
+    }
+    .products h5{
+        padding-bottom: 10px!important;
+        padding-top: 10px;
+    }
+    /* data analytic */
+    .imageData{
+      top: 25%!important;
+      left: 40%!important;
+    }
+    .imageData ul li{
+      font-size: 13px!important;
+      margin-top: 0px!important;
+    }
+    .dataManagement{
+      padding: 15px 0px!important;
+    }
+    .dataManagement h2{
+      font-size: 18px!important;
+      margin-left: 2px!important;
+    }
+    .keyPerformanceIndicator p{
+      padding: 20px 30px!important;
+      font-size: 15px!important;
+    }
   .dataModel p{
     padding: 20px 60px!important;
   }
@@ -209,19 +209,20 @@ button.accordion{
 .businessProcessImages h1{
   font-size: 22px!important;
   }
-.businessProcessImages h2{
-  font-size: 18px!important;
-  }
+  .businessProcessImages h2{
+    font-size: 18px!important;
+    }
 
-.defineProcesses {
-    padding-top: 10px!important;
-    padding-bottom: 10px;
-}
-.processAutomation{
-  border-bottom: 1px solid #c2c2c2!important;
-}
-.businessProcessExplanation {
-    margin-top: 30px!important;
+  .defineProcesses {
+      padding-top: 10px!important;
+      padding-bottom: 10px;
+  }
+  .processAutomation{
+    border-bottom: 1px solid #c2c2c2!important;
+  }
+  .businessProcessExplanation {
+      margin-top: 30px!important;
+  }
 }
 
 /* Small Screen */
