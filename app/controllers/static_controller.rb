@@ -5,7 +5,8 @@ class StaticController < ApplicationController
   end
   def enterprise
   end
- 
+  def careers
+  end
   
 def contactus
     @static = Static.new

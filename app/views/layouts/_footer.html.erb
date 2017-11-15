@@ -44,7 +44,7 @@
         <div class="hidden-lg hidden-md">
             <%= link_to 'Data Visualization', data_analytics_path(anchor: 'data-visualization') %><br>
             <%= link_to 'Application Development' %><br>
-            <%= link_to 'Enterprise Mobility' %>
+            <%= link_to 'Enterprise Mobility', enterprise_path %>
         </div>
       </div>
    </div>
@@ -52,7 +52,7 @@
        <div class="sequence">
          <%= link_to 'Data Visualisation', data_analytics_path(anchor: 'data-visualization') %><br>
          <%= link_to 'Application Development' %><br>
-         <%= link_to 'Enterprise Mobility' %>
+         <%= link_to 'Enterprise Mobility', enterprise_path %>
        </div>
    </div>
    <div class="col-lg-2 col-md-2 col-sm-4"><%# Company %>
@@ -60,16 +60,15 @@
        <div class="maktosubHeading">
          <%= link_to 'About Makto', company_path %><br>
         <%= link_to 'Team', company_path(anchor: 'team') %><br>
-
-         <%= link_to 'Careers' %><br>
+        <%= link_to 'Careers', careers_path %><br>
        <div class="hidden-lg hidden-md">
-            <%= link_to 'Corporate Blog' %>
+            <%= link_to 'Corporate Blog', blogs_path %>
          </div>
        </div>
    </div>
    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><%# Company %>
        <div  class="sequence">
-         <%= link_to 'Corporate Blog' %><br>
+         <%= link_to 'Corporate Blog', blogs_path %><br>
        </div>
    </div>
    <div class="col-lg-1 col-md-0">
@@ -79,13 +78,14 @@
 <div class="row thirdFooter">
    <div class="col-lg-8 col-md-8 col-sm-12  clearfix">
          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <p><a href="#"><span class="maktofooterStyle">Privacy Policy</span></a>
-            <a href="#"> <span class="maktofooterStyle">Terms & Conditions</span></a>
-             <a><span>Contact Us</span></a>
+            <p> 
+              <%= link_to 'Privacy Policy', home_path, :class => 'maktofooterStyle' %>
+              <%= link_to 'Terms & Conditions', home_path, :class => 'maktofooterStyle' %>
+              <%= link_to 'Contact Us', contactus_path  %>
             </p>
          </div>
          <div id="sec_box" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <%= link_to 'Makto Technology Limited Private Limited. IN', visitors_index_path %>
+            <%= link_to 'Makto Technology Limited Private Limited. IN', home_path %>
          </div>
    </div>
 </div>

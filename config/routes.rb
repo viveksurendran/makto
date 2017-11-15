@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   get 'contactus', :to => 'static#contactus'
   get 'enterprise', :to => 'static#enterprise'
   get 'business', :to => 'static#business'
+  get 'careers', :to => 'static#careers'
   get 'data-analytics', :to => 'static#analytics'
-  get 'visitors/index'
+  get 'home', :to => 'visitors#index'
     authenticate :admin do
    devise_scope :admin do
        get 'admin-dashboard', to: 'admins/registrations#home', :as => :admin_root
