@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.4'
 gem 'social-share-button', '0.2.1'
 # Use Puma as the app server
 gem 'devise'
+gem 'tinymce-rails'
+gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 group :development do
  gem 'puma', '~> 3.7'
 end

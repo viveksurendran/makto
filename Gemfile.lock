@@ -198,6 +198,11 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
+    tinymce-rails (4.7.2)
+      railties (>= 3.1.1)
+    tinymce-rails-imageupload (4.0.17.beta.3)
+      railties (>= 3.2, < 6)
+      tinymce-rails (~> 4.0)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.3)
@@ -246,6 +251,8 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   thin
+  tinymce-rails
+  tinymce-rails-imageupload (~> 4.0.0.beta)
   turbolinks (~> 5)
   twitter-bootstrap-rails
   tzinfo-data
