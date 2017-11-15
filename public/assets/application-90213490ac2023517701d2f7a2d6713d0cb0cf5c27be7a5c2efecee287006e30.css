@@ -694,6 +694,9 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 .btn{
   border-radius: 0px!important;
 }
+.form-control{
+  font-family: Arial;
+}
 /* horizontal scroll bar will appear when width is less than 330px */
 @media(max-width:330px){
   body{
@@ -821,10 +824,13 @@ font-size: 18px!important;
   .dataModel p{
     padding: 20px 60px!important;
   }
-button.accordion{
-    font-size: 18px!important;
-    padding: 15px!important;
+  .accord-header{
+    font-size: 20px!important;
   }
+  .accord-header >span >img{
+    height: 20px!important;
+  }
+
  /* enterprise mobility css start*/
      .mobilityHeading{
       margin-top: 20px!important;
@@ -904,6 +910,10 @@ button.accordion{
 }
 .businessProcessExplanation {
     margin-top: 30px!important;
+}
+/*contact us css for mobile screen*/
+.office {
+      margin-top: 25px!important;
 }
 }
 /* Small Screen */
@@ -1293,6 +1303,9 @@ margin-bottom: 0px;
   top: 5px;
   left: 10px;
 }
+.contactContent a{
+  text-decoration: none;
+}
 .socialMediaHeading{
   padding-left:20px;
 }
@@ -1301,14 +1314,14 @@ margin-bottom: 0px;
   background-color: #ededed;
   font-size: 16px;
 }
+.secondFooter a{
+  text-decoration:none!important;
+}
 .secondFooter h4{
   font-family: 'Josefin Sans', Sans-serif!important;
 }
 .maktosubHeading{
   margin-left: 10px;
-}
-.maktosubHeading a{
-  font-family: Arial;
 }
 .sequence{
   padding-top: 40px;
@@ -1417,15 +1430,22 @@ margin-bottom: 0px;
 .mapLayout{
  width: 100%;
 }
-.officeAddress{
+.contactusForm{
   font-family: 'Josefin Sans', Sans-serif;
 }
-.officeAddress p{
-  font-size: 16px!important;
+.contactusForm h2{
+    text-align: center;
+}
+.office{
+  text-align: left;
+  margin-top: 60px;
+}
+.office h2{
+  color: #00acee;
   font-family: 'Josefin Sans', Sans-serif;
 }
-.officeAddress p span{
-  color:#4f4e9d;
+.office p{
+  font-size: 16px;
 }
 /* Data Analytics Css-Start */
 .imageData{
@@ -1588,6 +1608,13 @@ padding-bottom: 45px;
   padding-top: 40px;
   font-family: 'Josefin Sans', Sans-serif;
 }
+.mobilityFormLink {
+  text-decoration: none;
+}
+.mobilityFormLink a:hover{
+  font-weight: bold!important;
+   text-decoration: none;
+}
 
 /*BUSSINESS PROCESS MANAGEMENT CSS*/
 /*CSS FOR LARGE SCREEN ABOVE 1200PX*/
@@ -1652,9 +1679,15 @@ padding-bottom: 45px;
 .businessProcessFormButton {
     background-color: #a1a1a1!important;
 }
-
 .businessProcessFormButton a{
   color: #fff!important;
+  text-decoration: none;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.businessProcessFormButton a:hover{
+  color: #fff!important;
+  font-weight: bold;
+  text-decoration: none;
   font-family: 'Josefin Sans', Sans-serif;
 }
 
