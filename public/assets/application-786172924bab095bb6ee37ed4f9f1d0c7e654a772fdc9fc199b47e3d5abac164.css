@@ -687,20 +687,37 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   */
 
 
-/* default bootstrap default class using .class-name */
-/* custom css(self css) using camelcase format like .className */
-/*normal button is used in this project so we declare globally btn borderradius*/
+|---------------------------------|
+| Default Css Class | .class-name |
+| Custom  Css Class |  camelCase  |
+|---------------------------------|
 
+|-------------------------------------------|
+| Project Hint                              |
+|-------------------------------------------|
+| Headings    | font size -h2(default size) |
+| Sub Heading | font size -h4(default size) |
+| Footer      | font size -14px             |
+|-------------------------------------------|
+
+/*normal button is used in this project so we declare 
+globally btn borderradius*/
 .btn{
   border-radius: 0px!important;
 }
-/* horizontal scroll bar will appear when width is less than 330px */
+.form-control{
+  font-family: Arial;
+}
+/* horizontal scroll bar will appear
+ when width is less than 330px */
+
 @media(max-width:330px){
   body{
 overflow-x: scroll;
 min-width: 330px;
 }
 }
+
 /* Extra Small */
 @media(max-width: 767px){
     .cartonLogo{
@@ -756,7 +773,7 @@ font-size: 18px!important;
     font-size: 16px!important;
   }
  /* company page for extra small css start*/
- .whyMaktoHeading{
+.whyMaktoHeading{
       background-color:#382f2d;
       width: 70%;
     margin-top: 30px;
@@ -821,10 +838,13 @@ font-size: 18px!important;
   .dataModel p{
     padding: 20px 60px!important;
   }
-button.accordion{
-    font-size: 18px!important;
-    padding: 15px!important;
+  .accord-header{
+    font-size: 20px!important;
   }
+  .accord-header >span >img{
+    height: 20px!important;
+  }
+
  /* enterprise mobility css start*/
      .mobilityHeading{
       margin-top: 20px!important;
@@ -905,6 +925,10 @@ button.accordion{
 .businessProcessExplanation {
     margin-top: 30px!important;
 }
+/*contact us css for mobile screen*/
+.office {
+      margin-top: 25px!important;
+}
 }
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -925,6 +949,9 @@ button.accordion{
   position: absolute;
   right: 10%!important;
   bottom: 40%!important;
+}
+.cartonSliderLogo img {
+    height: 40px!important;
 }
    .carousel-caption{
      padding-bottom: 0px!important;
@@ -1066,6 +1093,7 @@ button.accordion{
   right: 10%!important;
   bottom: 40%!important;
 }
+
   .carousel-caption{
     padding-bottom: 0px!important;
     left:47%!important;
@@ -1242,6 +1270,7 @@ body{
   top: 30%;
   left: 10%;
 }
+
 .cartonSliderText h1{
 font-weight: bold;
 font-size: 50px;
@@ -1254,8 +1283,11 @@ margin-bottom: 0px;
 }
 .cartonSliderLogo{
   position: absolute;
-  right: 30%;
-  bottom: 50%;
+  right: 25%;
+  bottom: 46%;
+}
+.cartonSliderLogo img{
+  height: 100px;
 }
 .carousel-caption {
     left: 47%;
@@ -1284,6 +1316,7 @@ margin-bottom: 0px;
   background-color: #e2e2e2;
   padding:0px 30px;
   font-family: 'Josefin Sans', Sans-serif!important;
+  font-size: 14px;
   }
 .contactDetails {
   padding-top: 10px;
@@ -1292,6 +1325,10 @@ margin-bottom: 0px;
   position: relative;
   top: 5px;
   left: 10px;
+  font-size: 14px;
+ }
+.contactContent a{
+  text-decoration: none;
 }
 .socialMediaHeading{
   padding-left:20px;
@@ -1301,14 +1338,15 @@ margin-bottom: 0px;
   background-color: #ededed;
   font-size: 16px;
 }
+.secondFooter a{
+  text-decoration:none!important;
+  font-size: 14px;
+}
 .secondFooter h4{
   font-family: 'Josefin Sans', Sans-serif!important;
 }
 .maktosubHeading{
   margin-left: 10px;
-}
-.maktosubHeading a{
-  font-family: Arial;
 }
 .sequence{
   padding-top: 40px;
@@ -1317,6 +1355,10 @@ margin-bottom: 0px;
 .thirdFooter{
    padding-top: 40px;
    background-color: #ededed;
+ }
+ .thirdFooter a{
+  font-size: 14px;
+  text-decoration: none;
  }
 .maktofooterStyle{ /* Terms & Conditions */
   padding-right: 5px;
@@ -1334,7 +1376,7 @@ margin-bottom: 0px;
 }
 .cartonContent{
    font-family: Arial;
-  font-size: 16px;
+  font-size: 15px;
 }
 .imageFullScreen{
   padding-left: 0px;
@@ -1368,7 +1410,6 @@ margin-bottom: 0px;
  }
  /* company first row Why Makto content */
 .explanation{
-  color:#4f4e9d;
   margin-left: 80px;
   padding-top: 10px;
   padding-bottom: 30px;
@@ -1469,6 +1510,10 @@ color:#000;
   font-size: 1.2em;
   font-family: 'Josefin Sans', Sans-serif!important;
 }
+.keyPerformanceIndicator img{
+  height: 100px;
+}
+
 .dataModel{
   margin-top: 10px;
 }
@@ -1476,6 +1521,9 @@ color:#000;
   padding: 25px 90px;
   font-size: 1.2em;
   font-family: 'Josefin Sans', Sans-serif!important;
+}
+.dataModel img{
+  height: 100px;
 }
 .dataVisualization{
   background-color: #a7cfe4;
@@ -1492,7 +1540,9 @@ color:#000;
     font-size: 23px;
     font-family: 'Josefin Sans', Sans-serif;
 }
-
+.accord-header >span >img {
+    height: 20px!important;
+}
 .accord-content{
     background-color: #ececec;
     padding-bottom: 5px;
@@ -1595,6 +1645,13 @@ padding-bottom: 45px;
   padding-top: 40px;
   font-family: 'Josefin Sans', Sans-serif;
 }
+.mobilityFormLink {
+  text-decoration: none;
+}
+.mobilityFormLink a:hover{
+  font-weight: bold!important;
+   text-decoration: none;
+}
 
 /*BUSSINESS PROCESS MANAGEMENT CSS*/
 /*CSS FOR LARGE SCREEN ABOVE 1200PX*/
@@ -1615,29 +1672,43 @@ padding-bottom: 45px;
 .businessProcessImages{
   font-family: 'Josefin Sans', Sans-serif;
   margin-top: 50px;
-  padding-bottom: 50px;
  }
 .businessProcessImages h1{
   text-align: center;
 }
 .defineProcesses{
-  padding-top: 50px;
-  padding-bottom: 10px;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #c2c2c2;
   border-right:  1px solid #c2c2c2;
 }
+.defineProcesses img{
+  height: 100px;
+}
 .integrateExistingSystem{
   padding-top: 50px;
-    border-bottom: 1px solid #c2c2c2;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c2c2c2;
  }
- .processAutomation{
+ .integrateExistingSystem img{
+  height: 100px;
+ }
+  .processAutomation{
   padding-top: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
   border-right:  1px solid #c2c2c2;
+ }
+ .processAutomation img{
+  height: 100px;
  }
  .requirementDefinitionDocumentation{
   padding-top: 50px;
  }
-
+ .requirementDefinitionDocumentation img{
+  height: 100px;
+ }
 .businessProcessImageAndExplanation{
   background-color: #5d73c0;
 }
@@ -1659,9 +1730,15 @@ padding-bottom: 45px;
 .businessProcessFormButton {
     background-color: #a1a1a1!important;
 }
-
 .businessProcessFormButton a{
   color: #fff!important;
+  text-decoration: none;
+  font-family: 'Josefin Sans', Sans-serif;
+}
+.businessProcessFormButton a:hover{
+  color: #fff!important;
+  font-weight: bold;
+  text-decoration: none;
   font-family: 'Josefin Sans', Sans-serif;
 }
 
@@ -1690,7 +1767,7 @@ padding-bottom: 45px;
 .navbar-inverse .navbar-nav > li a{
  color: white!important ;
 }*/
-/* line 1, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 1, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 body {
   background-color: #fff;
   color: #333;
@@ -1700,62 +1777,62 @@ body {
   line-height: 18px;
 }
 
-/* line 10, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 10, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 16, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 16, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-/* line 22, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 22, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 a {
   color: #000;
 }
-/* line 25, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 25, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 a:visited {
   color: #666;
 }
-/* line 29, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 29, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 a:hover {
   color: #fff;
   background-color: #000;
 }
 
-/* line 35, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 35, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 th {
   padding-bottom: 5px;
 }
 
-/* line 39, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 39, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 td {
   padding: 0 5px 7px;
 }
 
-/* line 44, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 44, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 49, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 49, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 #notice {
   color: green;
 }
 
-/* line 53, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 53, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
-/* line 59, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 59, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -1763,7 +1840,7 @@ div.field, div.actions {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-/* line 66, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 66, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -1773,13 +1850,13 @@ div.field, div.actions {
   background-color: #c00;
   color: #fff;
 }
-/* line 76, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 76, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
 }
 
-/* line 82, /home/raja/Documents/rails/MaktoResponsive/app/assets/stylesheets/scaffolds.scss */
+/* line 82, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 label {
   display: block;
 }
