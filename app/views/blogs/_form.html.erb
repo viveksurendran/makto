@@ -11,12 +11,12 @@
   <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description, id: :blog_description,  :class => "tinymce", :rows => 40, :cols => 120 %>
-
+ <%= tinymce %>
   </div>
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
-<%= tinymce %>
+
 </div>
 

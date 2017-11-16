@@ -13,12 +13,12 @@ def contactus
 end
   def create
     @static = Static.new(contactus_params)
-
    if @static.save
-    flash[:notice] = "raja"
-    redirect_to visitors_index_path
+     redirect_to home_path
+     flash[:notice] = "Your form is successfully Submited"
    else
-    flash[:notice] = "error"
+    redirect_to contactus_path
+    flash[:notice] = "Your form is not submitted, plz provide the valid information."
    end
  end
 

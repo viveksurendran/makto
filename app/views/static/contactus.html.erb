@@ -1,3 +1,10 @@
+<!-- alert message display -->
+ <% if flash[:notice] %>
+     <div class="row">
+       <h6 style="color:red;"> <%= flash[:notice] %></h6>
+     </div>
+ <% end %>
+ <!-- google map -->
 <div class="row">
       <div class="mapLayout">
            <div id="map" class="img-responsive">
@@ -16,8 +23,9 @@
             </p>
                  <h2> Coimbatore</h2>
             <p>
-             GF 30. Elcot.SEZ, IT/ITeS, Tidel Park, <br>
-             Coimbatore 641014, Tamilnadu, india.<br>
+             B2, First Floor, Rathinam Technical <br class="hidden-lg hidden-md hidden-sm">Campus<br class="hidden-xs">
+             Eachanari, Pollachi Main Road,<br>
+             Coimbatore 641 021, Tamilnadu, India.<br>
              Email: info@maktoinc.com,<br>
              Contact: 8056592140.
             </p>
@@ -27,7 +35,7 @@
 
 <script>
 function initMap() {
-   var uluru = {lat: 11.031670,  lng:77.018820 };
+   var uluru = {lat: 10.933980,  lng:76.980398 };
    var map = new google.maps.Map(document.getElementById('map'), {
      zoom: 15,
      center: uluru

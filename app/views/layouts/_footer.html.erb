@@ -17,9 +17,9 @@
         </div>
         <div class="socialMedia">
            Connect us
-           <%= link_to image_tag("facebook.png", alt: "Facebook"), "http://www.facebook.com/mypage", target: :_blank, :class => 'socialMediaHeading'%>
-           <%= link_to image_tag("twitter.png", alt: "twitter"), "http://www.twitter.com", target: :_blank %>
-           <%= link_to image_tag("linkedin.png", alt: "linkedin"), "http://www.facebook.com/mypage", target: :_blank %>
+           <%= link_to image_tag("facebook.png", alt: "Facebook"), " http://www.facebook.com/maktoinc", target: :_blank, :class => 'socialMediaHeading'%>
+           <%= link_to image_tag("twitter.png", alt: "twitter"), " http://www.twitter.com/maktoinc", target: :_blank %>
+           <%= link_to image_tag("linkedin.png", alt: "linkedin"), "https://in.linkedin.com/company/makto-technology-private-limited", target: :_blank %>
         </div>
   </div>
 </div>
@@ -30,29 +30,26 @@
    <div class="col-lg-2 col-md-3 col-sm-4"><%# Products & solutions %>
      <h4>PRODUCTS & SOLUTIONS</h4>
       <div class="maktosubHeading">
-         <%= link_to 'Toruk' %><br>
+   <!--  <%= link_to 'Toruk' %> -->  
          <%= link_to 'Carton', carton_path  %><br>
-         <%= link_to 'Decksys' %>
+         <%= link_to 'Decksys', href="http://www.decksys.com", target: :_blank %>
       </div>
    </div>
    <div class="col-lg-2 col-md-2 col-sm-4"><%# Services %>
        <h4>SERVICES</h4>
       <div class="maktosubHeading">
-         <%= link_to 'Cloud Management' %><br>
+    <!-- <%= link_to 'Cloud Management' %> -->
          <%= link_to 'Data Analytics', data_analytics_path %><br>
          <%= link_to 'Data Modeling',data_analytics_path(anchor: 'data-modeling') %><br>
+         <%= link_to 'Data Visualisation', data_analytics_path(anchor: 'data-visualization') %><br>
         <div class="hidden-lg hidden-md">
-            <%= link_to 'Data Visualization', data_analytics_path(anchor: 'data-visualization') %><br>
-            <%= link_to 'Application Development' %><br>
-            <%= link_to 'Enterprise Mobility', enterprise_path %>
+          <%= link_to 'Enterprise Mobility', enterprise_path %>
         </div>
       </div>
    </div>
    <div class="col-lg-2 col-md-3 hidden-sm hidden-xs"><%# Services  %>
        <div class="sequence">
-         <%= link_to 'Data Visualisation', data_analytics_path(anchor: 'data-visualization') %><br>
          <%= link_to 'Application Development' %><br>
-         <%= link_to 'Enterprise Mobility', enterprise_path %>
        </div>
    </div>
    <div class="col-lg-2 col-md-2 col-sm-4"><%# Company %>
@@ -60,7 +57,6 @@
        <div class="maktosubHeading">
          <%= link_to 'About Makto', company_path %><br>
         <%= link_to 'Team', company_path(anchor: 'team') %><br>
-        <%= link_to 'Careers', careers_path %><br>
        <div class="hidden-lg hidden-md">
             <%= link_to 'Corporate Blog', blogs_path %>
          </div>
@@ -85,7 +81,7 @@
             </p>
          </div>
          <div id="sec_box" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <%= link_to 'Makto Technology Limited Private Limited. IN', home_path %>
+            <%= link_to 'Makto Technology Private Limited. IN', home_path %>
          </div>
    </div>
 </div>
