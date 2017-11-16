@@ -5,19 +5,6 @@
   =require twitter-bootstrap-static/sprites
   */
 
-|---------------------------------|
-| Default Css Class | .class-name |
-| Custom  Css Class |  camelCase  |
-|---------------------------------|
-
-|-------------------------------------------|
-| Project Hint                              |
-|-------------------------------------------|
-| Headings    | font size -h2(default size) |
-| Sub Heading | font size -h4(default size) |
-| Footer      | font size -14px             |
-|-------------------------------------------|
-
 /*normal button is used in this project so we declare 
 globally btn borderradius*/
 .btn{
