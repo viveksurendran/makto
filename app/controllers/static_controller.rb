@@ -32,7 +32,7 @@ end
 # end
 
 def careers
-  @statics = Static.all
+  @statics = Static.alls
 end
   
 def contactus
@@ -41,7 +41,7 @@ end
 def create
     @static = Static.new(contactus_params)
    if @static.save
-     redirect_to home_path
+     redirect_to contactus_path
      flash[:notice] = "Your form is successfully Submited"
    else
     redirect_to contactus_path
@@ -56,6 +56,6 @@ def enterpriseform_params
   params.require(:enterprise).permit(:name);
 end
   def contactus_params
-    params.require(:static).permit(:name, :email, :phone, :enquiry, :description)
+    params.require(:static).permit(:name, :email, :phone, :enquiry, :description, :organization)
   end
 end
