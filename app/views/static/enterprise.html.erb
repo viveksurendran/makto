@@ -4,7 +4,7 @@
 <!-- first Row -->
 <div class="row">
    <div class="col-lg-12 imageFullScreen">
-                    <%= image_tag "mobilityheader.jpg", :class => 'img-responsive' %>
+                    <%= image_tag "enterprise-page/mobilityheader.jpg", :class => 'img-responsive' %>
 
                     <div class="enterpriseImageData">
                         <h3>ENTERPRISE MOBILITY</h3>
@@ -15,7 +15,7 @@
 <!-- second Row -->
 <div style ="background-color: #f7f7f6;"class="row">
     <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 mobilitySectionImage">
-       <%= image_tag "mobilitysection.jpg" , :class => 'img-responsive' %>
+       <%= image_tag "enterprise-page/mobilitysection.jpg" , :class => 'img-responsive' %>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 mobilitySectionContent">
          <div class="mobilityHeading">
@@ -45,7 +45,38 @@
     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 ">
         <div class="mobilityFormLink">
            <h3>Fill out a form and we will <br>get back to you.</h3>
-         <center><button class="btn btn-default"> <%= link_to "Click Here" %></button></center> 
+         <center><button data-toggle="modal" data-target="#largeModal" class="btn btn-default"> click Here</button></center> 
         </div>
     </div>
+</div>
+<!-- enterprise mobility page end-->
+<!-- alert message display -->
+ <% if flash[:notice] %>
+     <div class="row col-lg-offset-8">
+       <h6 style="color:green;"> <%= flash[:notice] %></h6>
+     </div>
+ <% end %>
+<!-- Bootstrap Modal for Enterprise Form -->
+
+<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="pull-right">
+           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        <h4 class="modal-title" id="myModalLabel">Job Applying Form</h4>
+      </div>
+      <div class="modal-body">
+          <%= render 'static/enterprise_form' %>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-right">
+            <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
 </div>

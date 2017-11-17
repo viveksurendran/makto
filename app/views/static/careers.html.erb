@@ -3,7 +3,7 @@
 <!-- first row -->
 <div class="row">
    <div class="col-lg-12 imageFullScreen">
-                    <%= image_tag "bpmimage-makto.jpg", :class => 'img-responsive' %>
+                    <%= image_tag "bpm-page/bpmimage-makto.jpg", :class => 'img-responsive' %>
                     <!-- <div class="businessImageData">
                         <h3>BPM</h3>
                     </div> -->
@@ -12,11 +12,23 @@
 <!-- Second Row -->
 <div class="row">
    <div class="col-lg-6">
-      <ul>
-      	<li>Job Title</li>
-      	<li>Roles</li>
-      	<li>Responsibility</li>
-      </ul>
+      <% @statics.each do |contactus| %>
+         <table>
+               <tr>
+                  <th>Job Title:</th>
+                  <td><%= contactus.name %></td>
+               </tr>
+                <tr>
+                   <th>Job Roles:</th>
+                   <td><%= contactus.email %></td>
+                </tr>
+                <tr>
+                    <th>Job Responsibility:</th>
+                    <td><%= contactus.phone %></td>
+                </tr>
+          </table>
+      <% end %>
+     
    </div>
    <div class="col-lg-6">
         <p>This div contains some data.</p>

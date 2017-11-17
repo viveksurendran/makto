@@ -5,8 +5,10 @@
   =require twitter-bootstrap-static/sprites
   */
 
+
 /*normal button is used in this project so we declare 
 globally btn borderradius*/
+
 .btn{
   border-radius: 0px!important;
 }
@@ -22,6 +24,13 @@ overflow-x: scroll;
 min-width: 330px;
 }
 }
+button, select {
+    color: black!important;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    font-family: arial;
+   }
 
 /* Extra Small */
 @media(max-width: 767px){
@@ -189,7 +198,8 @@ font-size: 18px!important;
      .mobilityFormLink h3{
       font-size: 19px!important;
      }
-  .enterpriseImageData {
+  
+    .enterpriseImageData {
         width:50%!important;
         bottom: 4%!important;
         position: absolute;
@@ -572,8 +582,8 @@ body{
 /* visitor#index Landing page */
 .cartonSliderText{
   position: absolute;
-  top: 30%;
-  left: 10%;
+    right: 25%;
+  top: 35%;
 }
 
 .cartonSliderText h1{
@@ -588,8 +598,8 @@ margin-bottom: 0px;
 }
 .cartonSliderLogo{
   position: absolute;
-  right: 25%;
-  bottom: 46%;
+   top: 40%;
+  left: 15%;
 }
 .cartonSliderLogo img{
   height: 100px;
@@ -906,7 +916,7 @@ html {
   padding: 30px 15px 0px 15px;
 }
 .mobilityContent ul li{
- background-image: url('arrow.png');
+ background-image: url('enterprise-page/arrow.png');
 background-repeat: no-repeat;
 padding-bottom: 10px;
 }
@@ -926,7 +936,7 @@ padding-bottom: 10px;
   list-style-type: none;
 }
 .mobilitySalesContent li{
-   background-image: url('arrow.png');
+   background-image: url('enterprise-page/arrow.png');
 background-repeat: no-repeat;
 height: 40px;
 padding-bottom: 45px;
@@ -953,7 +963,10 @@ padding-bottom: 45px;
 .mobilityFormLink {
   text-decoration: none;
 }
-.mobilityFormLink a:hover{
+.mobilityFormLink button{
+  width: auto;
+}
+.mobilityFormLink button:hover{
   font-weight: bold!important;
    text-decoration: none;
 }
@@ -1034,13 +1047,12 @@ padding-bottom: 45px;
 }
 .businessProcessFormButton {
     background-color: #a1a1a1!important;
+    width: auto;
+    color: #fff!important;
+    font-family: 'Josefin Sans', Sans-serif;
 }
-.businessProcessFormButton a{
-  color: #fff!important;
-  text-decoration: none;
-  font-family: 'Josefin Sans', Sans-serif;
-}
-.businessProcessFormButton a:hover{
+
+.businessProcessFormButton:hover{
   color: #fff!important;
   font-weight: bold;
   text-decoration: none;

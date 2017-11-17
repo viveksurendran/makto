@@ -1,0 +1,13 @@
+ <h2>Enterprise  Form </h2>
+<%= form_for  :enterprise, :html => {:class => "form-horizontal center"} do |f| %>
+      <div class="form-group">
+        <%= f.label :name, "NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.text_field :name, class: "form-control"
+          %>
+        </div>
+     </div>
+      <div class="actions text-center">
+           <%= f.submit "SUBMIT",  class: "btn btn-info" %>
+       </div>
+ <% end %>

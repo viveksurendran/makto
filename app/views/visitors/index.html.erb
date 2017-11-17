@@ -1,29 +1,24 @@
 <!-- Landing Page -->
-<!-- alert message display -->
- <% if flash[:notice] %>
-     <div class="row">
-       <h6 style="color: green;"> <%= flash[:notice] %></h6>
-     </div>
- <% end %>
  <!-- carousel -->
 <div class="row">
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                      <div class="carousel-inner">
                           <div class="item ">
-                               <%= image_tag "slider-data.jpg" %>
+                               <%= image_tag "landing-page/slider-data.jpg" %>
                                <div class="carousel-caption">
                                     <h1>Dashboarding, Reporting & <br><span>Analytics</span></h1>
                                 </div>
                           </div>
                           <div class="item active">
-                                <%= image_tag "slider-carton.jpg", :class => 'img-responsive'%>
+                                <%= image_tag "landing-page/slider-carton.jpg", :class => 'img-responsive'%>
                                 <div class="cartonSliderText">
                                     <h1>AUTOMATE <br>WAREHOUSE</h1>
                                     <p>Matches inventory to orders<br class="hidden-sm hidden-md hidden-lg"> and to <br class="hidden-xs">distribution centers
                                     </p>
                                 </div>
                                <div class="cartonSliderLogo">
-                                  <%= image_tag "carton-logo-section2", :class =>'img-responsive' %>
+                                  <%= link_to image_tag("carton-logo-section2", alt: "MaktoLogo"), carton_path %>
+                              
                               </div> 
                           </div>
                      </div>
@@ -34,25 +29,25 @@
     <h2 class="text-center top">Bootstrap Your Business Transformation With Our <br>Products & Solutions</h2>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-6">  <!-- Enterprise Warehouse Management System-->
-              <center><%= image_tag "carton-logo-section2.png", :style => 'padding-top:20px;' %></center>
+              <center><%= link_to (image_tag "carton-logo-section2.png", :style => 'padding-top:15px;'), carton_path %></center>
              <h4 class="text-center">Enterprise Warehouse <br> Management System</h4>
   </div>
  <div class="col-lg-3 col-md-3 col-sm-6">  <!-- Data Analytics -->
-             <center><%= image_tag "data-analytics.png" %></center>
+             <center><%= link_to (image_tag "landing-page/data-analytics.png"), data_analytics_path %></center>
              <h4 class="text-center">Data Analytics, Modeling,<br>Reporting & Visualisation</h4>
  </div>
  <div class="col-lg-3 col-md-3 col-sm-6">  <!-- Hosting Infrastructure -->
-            <center><%= image_tag "decksys-logo-section2.png", :style => 'padding-top:20px;' %></center>
+            <center><%= link_to (image_tag "landing-page/decksys-logo-section2.png", :style => 'padding-top:20px;'), href="http://www.decksys.com", target: :blank %></center>
              <h4 class="text-center">Hosting, Infrastructure &<br>Cloud Management</h4>
  </div>
  <div class="col-lg-3 col-md-3 col-sm-6">
-              <center><%= image_tag "business-process-section2.png" %></center>
+              <center><%= link_to (image_tag "landing-page/business-process-section2.png"), business_path %></center>
              <h4 class="text-center">Automate Business Processes &<br>Enterprise Mobility</h4>
  </div>
 </div>
 <script>
   $('#myCarousel').carousel
   ({
-    interval: 10000,
+    interval: 5000,
   })
 </script>

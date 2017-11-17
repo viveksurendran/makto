@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root :to => 'visitors#index'
   resources :blogs
   post 'contactus', to: 'static#create'
+  post 'enterprise', to: 'static#enterprisecreate'
+  post 'business', to: 'static#businesscreate'
   resources :static
   get 'carton', :to => 'static#carton'
   get 'company', :to => 'static#company'

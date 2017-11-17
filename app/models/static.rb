@@ -1,4 +1,6 @@
 class Static < ApplicationRecord
+	 validates :organization, presence: true,
+                    length: { minimum: 5, maximum: 30 }
 	 validates :name, :enquiry, presence: true,
                     length: { minimum: 5, maximum: 30 }
 

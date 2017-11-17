@@ -1,6 +1,13 @@
 <h2>Contact Us Form </h2>
 <%= form_for  :static, :html => {:class => "form-horizontal center"} do |f| %>
       <div class="form-group">
+        <%= f.label :organization, "ORGANIZATION NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.text_field :organization, class: "form-control",
+          :minlength=>"5", :maxlength=>"30", required: true %>
+        </div>
+     </div>
+      <div class="form-group">
         <%= f.label :name, "NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
         <div class="col-lg-8 col-md-8 col-sm-9">
           <%= f.text_field :name, class: "form-control",
@@ -20,9 +27,9 @@
         </div>
       </div>
       <div class="form-group">
-        <%= f.label :enquiry, "ENQUIRY:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
-        <div class="col-lg-8 col-md-8 col-sm-9">
-          <%= f.text_field :enquiry, class: "form-control",:minlength=>"5", :maxlength=>"30", required: true %>
+        <%= f.label :enquiry, "ENQUIRY FOR:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9 ">
+        <%= f.select :enquiry,  [ 'Data Visusalization', 'Data Model', 'Data Analytics', 'Hosting Services', 'Bussiness Process Management', 'Enterprise Mobility' ],  prompt: 'Select'%>
         </div>
       </div>
        <div class="form-group">

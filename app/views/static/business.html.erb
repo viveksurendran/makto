@@ -2,7 +2,7 @@
 
 <div class="row">
    <div class="col-lg-12 imageFullScreen">
-                    <%= image_tag "bpmimage-makto.jpg", :class => 'img-responsive' %>
+                    <%= image_tag "bpm-page/bpmimage-makto.jpg", :class => 'img-responsive' %>
                     <div class="businessImageData">
                         <h3>BPM</h3>
                     </div>
@@ -16,14 +16,14 @@
  <!--  define processes -->  
      <div class="col-lg-6 col-md-6 col-sm-6 defineProcesses">
       <center>
-          <%= image_tag "defineprocess.png", :class => 'img-responsive' %>
+          <%= image_tag "bpm-page/defineprocess.png", :class => 'img-responsive' %>
           <h2>Define processes</h2>
       </center>
      </div>
  <!--  integrate existing system -->
      <div class="col-lg-6 col-md-6 col-sm-6 integrateExistingSystem">
       <center>
-         <%= image_tag "discsys.png", :class => 'img-responsive' %>
+         <%= image_tag "bpm-page/discsys.png", :class => 'img-responsive' %>
           <h2>Integrate existing systems</h2> 
        </center>
      </div>
@@ -32,14 +32,14 @@
  <!-- process automation -->
      <div  class="col-lg-6 col-md-6 col-sm-6 processAutomation">
       <center>
-       <%= image_tag "processautomate.png", :class => 'img-responsive' %>
+       <%= image_tag "bpm-page/processautomate.png", :class => 'img-responsive' %>
         <h2>Process Automation</h2>
       </center>
     </div>
 <!--    Requirement-Definition-Documentation -->
     <div class="col-lg-6 col-md-6 col-sm-6 requirementDefinitionDocumentation">
       <center>
-       <%= image_tag "reqdoc.png", :class => 'img-responsive' %>
+       <%= image_tag "bpm-page/reqdoc.png", :class => 'img-responsive' %>
         <h2>Requirement-Definition-Documentation</h2>
       </center>
     </div>
@@ -47,7 +47,7 @@
 <!-- Third Row -->
 <div class="row businessProcessImageAndExplanation">
     <div class="col-lg-4 col-md-5 col-sm-5 imageFullScreen">
-    	<%= image_tag "bpm-desc.jpg", :class => 'img-responsive' %>
+    	<%= image_tag "bpm-page/bpm-desc.jpg", :class => 'img-responsive' %>
     </div>
     <div class="col-lg-6 col-md-7 col-sm-7 businessProcessExplanation">
     	<ul>
@@ -60,7 +60,38 @@
 <!-- fourth Row -->
 <div class="businessProcessButtonRow">
 <center>
-    <button class="btn btn-default businessProcessFormButton"><%= link_to 'Fill the form and we will get back to you' %>
-   </button>
+    <button data-toggle="modal" data-target="#largeModal" class="btn btn-default businessProcessFormButton">Fill the form and we will get back to you</button>
 </center>
+</div>
+
+
+<!-- alert message display -->
+ <% if flash[:notice] %>
+     <div class="row col-lg-offset-4">
+       <h6 style="color:green;"> <%= flash[:notice] %></h6>
+     </div>
+ <% end %>
+<!-- Bootstrap Modal for Business Form -->
+
+<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="pull-right">
+           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        <h4 class="modal-title" id="myModalLabel">Job Applying Form</h4>
+      </div>
+      <div class="modal-body">
+          <%= render 'static/business_form' %>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-right">
+            <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
 </div>
