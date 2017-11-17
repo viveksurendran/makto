@@ -32,7 +32,7 @@ end
 # end
 
 def careers
-  @statics = Static.alls
+  @statics = Static.all
 end
   
 def contactus
