@@ -4,28 +4,16 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
   */
-|---------------------------------|
-| Default Css Class | .class-name |
-| Custom  Css Class |  camelCase  |
-|---------------------------------|
-
-|-------------------------------------------|
-| Project Hint                              |
-|-------------------------------------------|
-| Headings    | font size -h2(default size) |
-| Sub Heading | font size -h4(default size) |
-| Footer      | font size -14px             |
-|-------------------------------------------|
 
 /*normal button is used in this project so we declare 
 globally btn borderradius*/
-
 .btn{
   border-radius: 0px!important;
 }
 .form-control{
   font-family: Arial;
 }
+
 /* horizontal scroll bar will appear
  when width is less than 330px */
 
