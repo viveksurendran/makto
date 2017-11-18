@@ -1,21 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  organization: MyString
   firstname: MyString
   lastname: MyString
-  totalemployee: 1
-  industry: MyString
   email: MyString
   phone: 1
+  resume: MyString
   countrycode: 1
 
 two:
-  organization: MyString
   firstname: MyString
   lastname: MyString
-  totalemployee: 1
-  industry: MyString
   email: MyString
   phone: 1
+  resume: MyString
   countrycode: 1

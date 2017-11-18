@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jobtitle: MyString
+  jobrole: MyString
+  jobresponsibility: MyText
+
+two:
+  jobtitle: MyString
+  jobrole: MyString
+  jobresponsibility: MyText

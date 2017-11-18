@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  resources :jobs
   devise_for :admins
   root :to => 'visitors#index'
   resources :blogs
   post 'contactus', to: 'static#create'
   post 'enterprise', to: 'static#enterprisecreate'
   post 'business', to: 'static#businesscreate'
+  post 'careers', to: 'static#careercreate'
   resources :static
   get 'carton', :to => 'static#carton'
   get 'company', :to => 'static#company'

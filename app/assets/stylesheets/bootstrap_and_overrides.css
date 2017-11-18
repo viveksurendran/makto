@@ -4,7 +4,18 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
   */
+|---------------------------------|
+| Default Css Class | .class-name |
+| Custom  Css Class |  camelCase  |
+|---------------------------------|
 
+|-------------------------------------------|
+| Project Hint                              |
+|-------------------------------------------|
+| Headings    | font size -h2(default size) |
+| Sub Heading | font size -h4(default size) |
+| Footer      | font size -14px             |
+|-------------------------------------------|
 
 /*normal button is used in this project so we declare 
 globally btn borderradius*/
@@ -23,6 +34,9 @@ globally btn borderradius*/
 overflow-x: scroll;
 min-width: 330px;
 }
+}
+.customDropdown select{
+  width: 100%;
 }
 button, select {
     color: black!important;
@@ -49,8 +63,8 @@ button, select {
     }
   /*  landing page css*/
   .cartonSliderText{
-  top: 20%!important;
-  left: 5%!important;
+  top: 13%!important;
+  right: 5%!important;
 }
 .cartonSliderText h1{
 font-size: 18px!important;
@@ -59,8 +73,8 @@ font-size: 18px!important;
   font-size: 13px!important;
  }
 .cartonSliderLogo{
-  bottom: 30%!important;
-  right: 10%!important;
+  top: 35%!important;
+  left: 10%!important;
 }
 .cartonSliderLogo img{
   height: 40px!important;  
@@ -80,11 +94,26 @@ font-size: 18px!important;
     padding: 0px 0px 0px 0px!important;
     text-align: center;
   }
+ /* carton page css start*/
   .cartonHeading{
     font-size: 26px!important;
       }
   .cartonContent{
     font-size: 16px!important;
+  }
+  .cartonFeatures h2{
+    margin-top: 40px!important;
+    margin-left: 40px!important;
+  }
+  .cartonFeatures ul li{
+    margin-left: 0px!important;
+  }
+  .cartonDeployment h2{
+    margin-top: 40px!important;
+    margin-left: 40px!important;
+  }
+  .cartonDeployment ul li{
+    margin-left: 0px!important;
   }
  /* company page for extra small css start*/
 .whyMaktoHeading{
@@ -244,6 +273,11 @@ font-size: 18px!important;
 .office {
       margin-top: 25px!important;
 }
+/*Career page css start for large screen*/
+.jobVacancy{
+  margin-left: 50px!important;
+  margin-bottom: 30px!important;
+}
 }
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -262,11 +296,15 @@ font-size: 18px!important;
     /* landing page css */
 .cartonSliderLogo{
   position: absolute;
-  right: 10%!important;
+  left: 10%!important;
   bottom: 40%!important;
 }
 .cartonSliderLogo img {
-    height: 40px!important;
+    height: 70px!important;
+}
+.cartonSliderText{
+  right: 10%!important;
+  top: 30%!important;
 }
    .carousel-caption{
      padding-bottom: 0px!important;
@@ -287,6 +325,22 @@ font-size: 18px!important;
     .manageInventory{
       padding: 35px 0px 0px 25px!important;
     }
+ /*carton css start*/
+ .cartonFeatures h2{
+    margin-top: 40px!important;
+    margin-left: 40px!important;
+  }
+  .cartonFeatures ul li{
+    margin-left: 0px!important;
+  }
+  .cartonDeployment h2{
+    margin-top: 40px!important;
+    margin-left: 40px!important;
+  }
+  .cartonDeployment ul li{
+    margin-left: 0px!important;
+  }
+
    /* company page*/
      .whyMaktoHeading{
       background-color:#382f2d;
@@ -392,7 +446,15 @@ font-size: 18px!important;
 .businessProcessExplanation {
     margin-top: 30px!important;
 }
-
+/*career css for small screen*/
+.jobVacancy{
+  margin-left: 30px!important;
+  margin-bottom: 30px!important;
+}
+.uploadButton{
+  position: relative;
+  top: 15px;
+}
 }
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -408,6 +470,10 @@ font-size: 18px!important;
   right: 10%!important;
   bottom: 40%!important;
 }
+.cartonSliderText{
+  right: 15%!important;
+  top: 30%!important;
+}
 
   .carousel-caption{
     padding-bottom: 0px!important;
@@ -418,6 +484,21 @@ font-size: 18px!important;
   }
   .manageInventory{  /* cartonpage second row Carton Definition */
     padding: 80px 0px 0px 100px!important;
+  }
+  /*carton css start*/
+  .cartonFeatures h2{
+    margin-top: 80px!important;
+    margin-left: 40px!important;
+  }
+  .cartonFeatures ul li{
+    margin-left: 0px!important;
+  }
+  .cartonDeployment h2{
+    margin-top: 80px!important;
+    margin-left: 40px!important;
+  }
+  .cartonDeployment ul li{
+    margin-left: 0px!important;
   }
   /*company page css for medium screen*/
   .whyMaktoHeading{
@@ -511,6 +592,11 @@ font-size: 18px!important;
 .businessProcessExplanation {
     margin-top: 70px!important;
 }
+/*career css for small screen*/
+.jobVacancy{
+  margin-left: 30px!important;
+  margin-bottom: 30px!important;
+}
 }
 /* Medium Screen end */
 .preloader{
@@ -531,7 +617,7 @@ font-size: 18px!important;
     top: 50%;
     left: 50%;
     background: url('loading.gif') no-repeat;
-    background-size: 40px 40px
+    background-size: 20px 20px;
 }
 a{
   color: #000!important;
@@ -699,11 +785,62 @@ margin-bottom: 0px;
   padding-right: 0px;
 }
 .cartonImageFirstRow{
-  padding-top: 30px;
+  margin-top:30px;
+  background-color: #7d6d5e;
 }
+.cartonFeatures{
+   color: #fff;
+   font-family: 'Josefin Sans';
+ }
+ .cartonFeatures h2{
+  margin-top: 150px;
+  margin-left: 100px;
+ }
+ .cartonFeatures ul{
+  list-style-type: none;
+  margin-top: 20px;
+ }
+ .cartonFeatures ul li{
+  font-size: 18px;
+  font-family: 'Josefin Sans';
+  margin-bottom: 15px;
+  margin-left: 60px;
+ }
 .cartonImageSecondRow{
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  background-color: #061f34;
 }
+.cartonDeployment{
+   color: #fff;
+   font-family: 'Josefin Sans';
+ }
+ .cartonDeployment h2{
+  margin-top: 150px;
+  margin-left: 100px;
+ }
+ .cartonDeployment ul{
+  list-style-type: none;
+  margin-top: 20px;
+ }
+ .cartonDeployment ul li{
+  font-size: 18px;
+  font-family: 'Josefin Sans';
+  margin-bottom: 15px;
+  margin-left: 60px;
+ }
+ .cartonFormButton{
+   background-color: #061f34;
+   color: #fff!important;
+   font-family: 'Josefin Sans';
+   font-weight: bolder;
+   font-size: 18px;
+   margin-bottom: 20px;
+   padding: 10px 40px;
+ }
+ .cartonFormButton:hover{
+  color: #000!important;
+  background-color: #57b5ea;
+ }
 
 /* company page css start */
 /* company first row */
@@ -971,6 +1108,15 @@ padding-bottom: 45px;
   font-weight: bold!important;
    text-decoration: none;
 }
+.modal-header{
+  border-bottom: 0px solid #fff;
+}
+.modal-footer{
+  border-top: 0px solid #fff;
+}
+.modal-content{
+  border: 5px solid #6396cd!important;
+}
 
 /*BUSSINESS PROCESS MANAGEMENT CSS*/
 /*CSS FOR LARGE SCREEN ABOVE 1200PX*/
@@ -1058,6 +1204,11 @@ padding-bottom: 45px;
   font-weight: bold;
   text-decoration: none;
   font-family: 'Josefin Sans', Sans-serif;
+}
+/*Career page css start for large screen*/
+.jobVacancy{
+  margin-left: 150px;
+  margin-bottom: 50px;
 }
 
 /*.navbar-fixed-left {

@@ -1,4 +1,4 @@
-class Enterprise < ApplicationRecord
+class Business < ApplicationRecord
 	 validates :organization, :industry, presence: true,
                     length: { minimum: 5, maximum: 30 }
 	 validates :firstname, :lastname, presence: true,
@@ -14,4 +14,3 @@ class Enterprise < ApplicationRecord
      validates :countrycode, presence: true,
                     length: { minimum: 2, maximum: 4 }
 end
-

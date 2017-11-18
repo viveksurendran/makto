@@ -25,9 +25,9 @@
 </div>
 <!-- footer second row -->
 <div class="row secondFooter">
-  <div class="col-lg-1 col-md-0">
+  <div class="col-lg-2 col-md-0">
    </div>
-   <div class="col-lg-2 col-md-3 col-sm-4"><%# Products & solutions %>
+   <div class="col-lg-3 col-md-3 col-sm-4"><%# Products & solutions %>
      <h4>PRODUCTS & SOLUTIONS</h4>
       <div class="maktosubHeading">
    <!--  <%= link_to 'Toruk' %> -->  
@@ -35,38 +35,42 @@
          <%= link_to 'Decksys', href="http://www.decksys.com", target: :_blank %>
       </div>
    </div>
-   <div class="col-lg-2 col-md-2 col-sm-4"><%# Services %>
+   <div class="col-lg-3 col-md-2 col-sm-4"><%# Services %>
        <h4>SERVICES</h4>
       <div class="maktosubHeading">
     <!-- <%= link_to 'Cloud Management' %> -->
          <%= link_to 'Data Analytics', data_analytics_path %><br>
          <%= link_to 'Data Modeling',data_analytics_path(anchor: 'data-modeling') %><br>
          <%= link_to 'Data Visualisation', data_analytics_path(anchor: 'data-visualization') %><br>
-        <div class="hidden-lg hidden-md">
-          <%= link_to 'Enterprise Mobility', enterprise_path %>
-        </div>
+        <!-- <div class="hidden-lg hidden-md"> -->
+          <%= link_to 'Enterprise Mobility', enterprise_path %><br>
+          <%= link_to 'Business Process Management', business_path %>
+        <!-- </div> -->
       </div>
    </div>
-   <div class="col-lg-2 col-md-3 hidden-sm hidden-xs"><%# Services  %>
+   <!-- <div class="col-lg-2 col-md-3 hidden-sm hidden-xs"><%# Services  %>
        <div class="sequence">
-         <%= link_to 'Application Development' %><br>
+         <%= link_to 'Enterprise Mobility', enterprise_path %><br>
+         <%= link_to 'Business Process Management', business_path %>
        </div>
-   </div>
-   <div class="col-lg-2 col-md-2 col-sm-4"><%# Company %>
+   </div> -->
+   <div class="col-lg-3 col-md-2 col-sm-4"><%# Company %>
          <h4>COMPANY</h4>
        <div class="maktosubHeading">
+         <%= link_to 'Team', company_path(anchor: 'team') %><br>
          <%= link_to 'About Makto', company_path %><br>
-        <%= link_to 'Team', company_path(anchor: 'team') %><br>
-       <div class="hidden-lg hidden-md">
+         
+        <%= link_to 'Corporate Blog', blogs_path %>
+        <!-- <div class="hidden-lg hidden-md">
             <%= link_to 'Corporate Blog', blogs_path %>
-         </div>
+         </div> -->
        </div>
    </div>
-   <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><%# Company %>
+   <!-- <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><%# Company %>
        <div  class="sequence">
          <%= link_to 'Corporate Blog', blogs_path %><br>
        </div>
-   </div>
+   </div> -->
    <div class="col-lg-1 col-md-0">
    </div>
 </div>

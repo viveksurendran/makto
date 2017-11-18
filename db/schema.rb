@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171117143310) do
+ActiveRecord::Schema.define(version: 20171118072110) do
 
   create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "email", default: "", null: false
@@ -36,8 +36,47 @@ ActiveRecord::Schema.define(version: 20171117143310) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "businesses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "organization"
+    t.string "firstname"
+    t.string "lastname"
+    t.integer "totalemployee"
+    t.string "industry"
+    t.string "email"
+    t.bigint "phone"
+    t.integer "countrycode"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "careers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.bigint "phone"
+    t.string "resume"
+    t.integer "countrycode"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "enterprises", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "name"
+    t.string "organization"
+    t.string "firstname"
+    t.string "lastname"
+    t.integer "totalemployee"
+    t.string "industry"
+    t.string "email"
+    t.bigint "phone"
+    t.integer "countrycode"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "jobs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "jobtitle"
+    t.string "jobrole"
+    t.text "jobresponsibility"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

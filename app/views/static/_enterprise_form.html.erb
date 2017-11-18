@@ -1,9 +1,59 @@
- <h2>Enterprise  Form </h2>
+ 
 <%= form_for  :enterprise, :html => {:class => "form-horizontal center"} do |f| %>
       <div class="form-group">
-        <%= f.label :name, "NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <%= f.label :organization, "ORGANIZATION NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
         <div class="col-lg-8 col-md-8 col-sm-9">
-          <%= f.text_field :name, class: "form-control"
+          <%= f.text_field :organization, class: "form-control",
+          :minlength=>"5", :maxlength=>"30", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :firstname, "FIRST NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.text_field :firstname, class: "form-control",
+          :minlength=>"5", :maxlength=>"30", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :lastname, "LAST NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.text_field :lastname, class: "form-control",
+          :minlength=>"5", :maxlength=>"30", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :totalemployee, "NO OF EMPLOYEES:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.text_field :totalemployee, class: "form-control",
+          :minlength=>"1", :maxlength=>"10", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :industry, "INDUSTRY:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9 customDropdown">
+          <%= f.select :industry, ['dropdown', 'dropdown'],:prompt => 'select' %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :email, "Email:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-8 col-md-8 col-sm-9">
+          <%= f.email_field :email, class: "form-control",
+          :minlength=>"5", :maxlength=>"30", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :phone, "PHONE:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-2">
+           <%= f.text_field :countrycode, class: "form-control", :minlength=>"2", :maxlength=>"4", required: true %>
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-9">
+          <%= f.text_field :phone, class: "form-control",
+          :minlength=>"4", :maxlength=>"12", required: true
           %>
         </div>
      </div>

@@ -1,0 +1,44 @@
+ <h2 class="text-center">BE A MAKTO </h2>
+<%= form_for  :career, :html => {:class => "form-horizontal center"} do |f| %>
+      
+     <div class="form-group">
+        <%= f.label :firstname, "FIRST NAME:", class: "col-lg-3 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-7 col-md-8 col-sm-9">
+          <%= f.text_field :firstname, class: "form-control",:minlength=>"5", :maxlength=>"30", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :lastname, "LAST NAME:", class: "col-lg-3 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-7 col-md-8 col-sm-9">
+          <%= f.text_field :lastname, class: "form-control", :minlength=>"5", :maxlength=>"30", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :email, "Email:", class: "col-lg-3 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-7 col-md-8 col-sm-9">
+          <%= f.email_field :email, class: "form-control", :minlength=>"5", :maxlength=>"30", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :phone, "PHONE:", class: "col-lg-3 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-2 col-xs-3 col-sm-3 col-md-3">
+           <%= f.text_field :countrycode, class: "form-control",:minlength=>"2", :maxlength=>"4", required: true %>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-9">
+          <%= f.text_field :phone, class: "form-control" , :minlength=>"4", :maxlength=>"12", required: true
+          %>
+        </div>
+     </div>
+     <div class="form-group">
+        <%= f.label :resume, "UPLOAD RESUME:", class: "col-lg-3 col-md-4 col-sm-3 control-label"%>
+        <div class="col-lg-7 col-md-8 col-sm-9">
+          <%= f.file_field :resume, :class => 'uploadButton' %>
+        </div>
+     </div>
+      <div class="actions text-center">
+           <%= f.submit "SUBMIT",  class: "btn btn-info" %>
+       </div>
+ <% end %>

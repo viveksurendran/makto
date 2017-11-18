@@ -11,26 +11,34 @@
 </div>
 <!-- Second Row -->
 <div class="row">
-   <div class="col-lg-6">
-      <% @statics.each do |contactus| %>
-         <table>
+   <div class="col-lg-6 col-md-6 col-sm-6">
+    
+     <h2 class="text-center">JOB VACANY</h2>
+      <% @jobs.each do |job| %>
+         <table class="jobVacancy">
                <tr>
                   <th>Job Title:</th>
-                  <td><%= contactus.name %></td>
+                  <td><%= job.jobtitle %></td>
                </tr>
                 <tr>
                    <th>Job Roles:</th>
-                   <td><%= contactus.email %></td>
+                   <td><%= job.jobrole %></td>
                 </tr>
                 <tr>
                     <th>Job Responsibility:</th>
-                    <td><%= contactus.phone %></td>
+                    <td><%= job.jobresponsibility %></td>
                 </tr>
           </table>
       <% end %>
-     
+    
    </div>
-   <div class="col-lg-6">
-        <p>This div contains some data.</p>
+   <div class="col-lg-6 col-md-6 col-sm-6">
+          <%= render 'static/career_form' %>
+           <!-- flash messages -->
+            <% if flash[:notice] %>
+                <div class="row">
+                     <h6 style="color:green;"> <%= flash[:notice] %></h6>
+                </div>
+           <% end %>
    </div>
-</div>
+ </div>
