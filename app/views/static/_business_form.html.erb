@@ -1,5 +1,4 @@
- <h2>Business  Form </h2>
-<%= form_for  :business, :html => {:class => "form-horizontal center"} do |f| %>
+ <%= form_for  :business, :html => {:class => "form-horizontal center"} do |f| %>
       <div class="form-group">
         <%= f.label :organization, "ORGANIZATION NAME:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
         <div class="col-lg-8 col-md-8 col-sm-9">
@@ -35,7 +34,8 @@
      <div class="form-group">
         <%= f.label :industry, "INDUSTRY:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
         <div class="col-lg-8 col-md-8 col-sm-9 customDropdown">
-          <%= f.select :industry, ['dropdown', 'dropdown'],:prompt => 'select' %>
+          <%= f.select :industry, ['AGRICULTURE AND ALLIED INDUSTRIES','AUTOMOBILES', 'AUTO COMPONENTS','AVIATION', 'BANKING', 'CEMENT', 'CONSUMER DURABLES', 'EDUCATION AND TRAINING','ENGINEERING AND CAPITAL GOODS', 'FINANCIAL SERVICES','GEMS AND JEWELLERY','HEALTHCARE','INFRASTRUCTURE', 'INSURANCE', 'IT & ITES', 'MANUFACTURING', 'ENGINEERING AND CAPITAL GOODS', 'FINANCIAL SERVICES','MEDIA AND ENTERTAINMENT','OIL AND GAS','PHARMACEUTICALS', 'REAL ESTATE', 'RETAIL', 'SCIENCE AND TECHNOLOGY', 'SERVICES',
+            'STEEL', 'TELECOMMUNICATIONS', 'TEXTILES', 'TOURISM AND HOSPITALITY'],:prompt => 'select' %>
         </div>
      </div>
      <div class="form-group">

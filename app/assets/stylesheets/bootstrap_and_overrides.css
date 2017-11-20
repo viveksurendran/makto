@@ -25,6 +25,9 @@ min-width: 330px;
 .customDropdown select{
   width: 100%;
 }
+.modal-lg {
+    width: 450px;
+}
 button, select {
     color: black!important;
     padding: 10px;
@@ -63,7 +66,7 @@ font-size: 18px!important;
   left: 10%!important;
 }
 .cartonSliderLogo img{
-  height: 35px!important;  
+  height: 40px!important;  
 }
   .carousel-caption{
     padding-bottom: 0px!important;
@@ -1123,9 +1126,7 @@ padding-bottom: 45px;
 .modal-footer{
   border-top: 0px solid #fff;
 }
-.modal-content{
-  border: 5px solid #6396cd!important;
-}
+
 
 /*BUSSINESS PROCESS MANAGEMENT CSS*/
 /*CSS FOR LARGE SCREEN ABOVE 1200PX*/
@@ -1219,8 +1220,8 @@ padding-bottom: 45px;
   margin-left: 150px;
   margin-bottom: 50px;
 }
-
-/*.navbar-fixed-left {
+/*Admin navbar*/
+.navbar-fixed-left {
   width: fit-content;
   position: fixed;
   border-radius: 0;
@@ -1244,4 +1245,4 @@ padding-bottom: 45px;
 }
 .navbar-inverse .navbar-nav > li a{
  color: white!important ;
-}*/
+}

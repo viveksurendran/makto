@@ -69,9 +69,15 @@
    </div>
  </div>
  <div class="row">
-      <center><button class="btn btn-default cartonFormButton">WE WILL CALL YOU <span style="font-weight:100;display: block;">Drop your details</span></button></center>
+      <center><button data-toggle="modal" data-target="#largeModal" class="btn cartonFormButton">WE WILL CALL YOU <span style="font-weight:100;display: block;">Drop your details</span></button></center>
  </div>
-<!--  <a href="company.html#display">Some nice link text</a> -->
+<!-- display notification -->
+ <% if flash[:notice] %>
+     <div class="row col-lg-offset-4">
+       <h6 style="color:green;"> <%= flash[:notice] %></h6>
+     </div>
+ <% end %>
+
  <%= render 'layouts/footer' %>
 
 <!-- navbar-fixed-top is initially transparent when scroll 750 the background color is #f8f8f8 -->
@@ -86,3 +92,27 @@
       });
     });
 </script>
+<!-- Bootstrap Modal for Enterprise Form -->
+
+<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="pull-right">
+           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        <h4 class="modal-title text-center" id="myModalLabel">ENQUIRY FOR CARTON</h4>
+      </div>
+      <div class="modal-body">
+          <%= render 'static/carton_form' %>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-right">
+            <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>

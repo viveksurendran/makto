@@ -42,6 +42,17 @@ def careercreate
    end 
 end
 
+def cartoncreate
+        @cartonform = Carton.new(cartonform_params)
+   if @cartonform.save
+     redirect_to carton_path
+     flash[:notice] = "Your form is successfully Submited"
+   else
+    redirect_to carton_path
+    flash[:notice] = "Your form is not submitted, plz provide the valid information."
+   end 
+end
+
 def careers
   @jobs = Job.all
 end
@@ -67,6 +78,9 @@ def enterpriseform_params
 end
 def businessform_params
   params.require(:business).permit(:organization, :firstname, :lastname, :totalemployee, :industry, :email, :phone, :countrycode);
+end
+def cartonform_params
+  params.require(:carton).permit(:organization, :firstname, :lastname, :totalemployee, :industry, :email, :phone, :countrycode);
 end
 def careerform_params
   params.require(:career).permit(:firstname, :lastname, :email, :phone, :countrycode, :resume);

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   post 'enterprise', to: 'static#enterprisecreate'
   post 'business', to: 'static#businesscreate'
   post 'careers', to: 'static#careercreate'
+  post 'carton', to: 'static#cartoncreate'
   resources :static
   get 'carton', :to => 'static#carton'
   get 'company', :to => 'static#company'
