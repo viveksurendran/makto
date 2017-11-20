@@ -14,7 +14,7 @@
    <div class="col-lg-6 col-md-6 col-sm-6">
     
      <h2 class="text-center">JOB VACANY</h2>
-      <% @jobs.each do |job| %>
+      <% if @jobs.each do |job| %>
          <table class="jobVacancy">
                <tr>
                   <th>Job Title:</th>
@@ -27,9 +27,12 @@
                 <tr>
                     <th>Job Responsibility:</th>
                     <td><%= job.jobresponsibility %></td>
+                    <%= link_to 'delete', job , method: :delete %>
                 </tr>
           </table>
-      <% end %>
+       <% end.empty? %>
+           <h6 style="color:red;" class="text-center">NO MORE VACANCY</h6>
+        <% end %>
     
    </div>
    <div class="col-lg-6 col-md-6 col-sm-6">

@@ -3,17 +3,16 @@
 <h1>Corporate Blog</h1>
 <div class="row">
     <div class="col-lg-8">
-        <% @blogs.each do |blog| %>
+        <% if @blogs.each do |blog| %>
         <div class="makto_blog_title"><h2><%= link_to blog.title %></h2></div>
         <div class="makto_blog_desc"><%= raw blog.description.truncate(1000) %></div>
         <div><%= social_share_button_tag(blog.title, :allow_sites => %w(twitter facebook linkedin)) %></div>
         <hr />
+        <% end.empty? %>
+           <h6 style="color:red;">Currently no blogs are available.</h6>
         <% end %>
     </div>
-    <div class="col-lg-4">
-        Google Add
-    </div>
+    
 </div>
-
 
 </div>

@@ -76,10 +76,29 @@ font-size: 18px!important;
     font-size: 16px!important;
     padding: 0px 0px!important;
       }
+  .enterpriseWarehouse{
+     border-bottom:  1px solid #fff;
+      border-right: 1px solid #fff;
+     padding: 10px; 
+  }
+  .dataAnalytics{
+    border-bottom: 1px solid #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .hostingInfrastructure{
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 20px;
+  }
+  .automateBusiness{
+    padding-top: 30px;
+  }
   .manageInventory{  /* cartonpage second row Carton Definition */
     padding: 0px 0px 0px 0px!important;
     text-align: center;
   }
+  
  /* carton page css start*/
   .cartonHeading{
     font-size: 26px!important;
@@ -644,6 +663,9 @@ body{
 .navbar-right .dropdown-menu {
      left: 0!important;
 }
+.cartonNavbarButton{
+  margin-top: 5px!important;
+}
 .dropdown-menu{
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
@@ -824,8 +846,9 @@ margin-bottom: 0px;
    padding: 10px 40px;
  }
  .cartonFormButton:hover{
-  color: #000!important;
-  background-color: #57b5ea;
+  color: #fff!important;
+  background-color: #061f34;
+  font-size: 19px;
  }
 
 /* company page css start */
