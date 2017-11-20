@@ -5,14 +5,7 @@
   =require twitter-bootstrap-static/sprites
   */
 
-/*normal button is used in this project so we declare 
-globally btn borderradius*/
-.btn{
-  border-radius: 0px!important;
-}
-.form-control{
-  font-family: Arial;
-}
+
 
 /* horizontal scroll bar will appear
  when width is less than 330px */
@@ -22,6 +15,12 @@ globally btn borderradius*/
 overflow-x: scroll;
 min-width: 330px;
 }
+}
+.btn{
+  border-radius: 0px!important;
+}
+.form-control{
+  font-family: Arial;
 }
 .customDropdown select{
   width: 100%;
@@ -33,7 +32,6 @@ button, select {
     background-color: white;
     font-family: arial;
    }
-
 /* Extra Small */
 @media(max-width: 767px){
     .cartonLogo{
@@ -62,7 +60,7 @@ font-size: 18px!important;
  }
 .cartonSliderLogo{
   top: 35%!important;
-  left: 10%!important;
+  left: 9%!important;
 }
 .cartonSliderLogo img{
   height: 40px!important;  

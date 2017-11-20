@@ -48,10 +48,10 @@
      </div>
      <div class="form-group">
         <%= f.label :phone, "PHONE:", class: "col-lg-4 col-md-4 col-sm-3 control-label"%>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-xs-3">
            <%= f.text_field :countrycode, class: "form-control", :minlength=>"2", :maxlength=>"4", required: true %>
         </div>
-        <div class="col-lg-6 col-md-8 col-sm-9">
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9">
           <%= f.text_field :phone, class: "form-control",
           :minlength=>"4", :maxlength=>"12", required: true
           %>
