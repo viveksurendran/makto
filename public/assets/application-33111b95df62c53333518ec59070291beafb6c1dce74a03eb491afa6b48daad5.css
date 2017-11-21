@@ -707,6 +707,9 @@ min-width: 330px;
 .customDropdown select{
   width: 100%;
 }
+.modal-lg {
+    width: 450px;
+}
 button, select {
     color: black!important;
     padding: 10px;
@@ -742,7 +745,7 @@ font-size: 18px!important;
  }
 .cartonSliderLogo{
   top: 35%!important;
-  left: 9%!important;
+  left: 10%!important;
 }
 .cartonSliderLogo img{
   height: 40px!important;  
@@ -758,10 +761,29 @@ font-size: 18px!important;
     font-size: 16px!important;
     padding: 0px 0px!important;
       }
+  .enterpriseWarehouse{
+     border-bottom:  1px solid #fff;
+      border-right: 1px solid #fff;
+     padding: 10px; 
+  }
+  .dataAnalytics{
+    border-bottom: 1px solid #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .hostingInfrastructure{
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 20px;
+  }
+  .automateBusiness{
+    padding-top: 30px;
+  }
   .manageInventory{  /* cartonpage second row Carton Definition */
     padding: 0px 0px 0px 0px!important;
     text-align: center;
   }
+  
  /* carton page css start*/
   .cartonHeading{
     font-size: 26px!important;
@@ -1326,6 +1348,9 @@ body{
 .navbar-right .dropdown-menu {
      left: 0!important;
 }
+.cartonNavbarButton{
+  margin-top: 5px!important;
+}
 .dropdown-menu{
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
@@ -1506,8 +1531,9 @@ margin-bottom: 0px;
    padding: 10px 40px;
  }
  .cartonFormButton:hover{
-  color: #000!important;
-  background-color: #57b5ea;
+  color: #fff!important;
+  background-color: #061f34;
+  font-size: 19px;
  }
 
 /* company page css start */
@@ -1782,9 +1808,7 @@ padding-bottom: 45px;
 .modal-footer{
   border-top: 0px solid #fff;
 }
-.modal-content{
-  border: 5px solid #6396cd!important;
-}
+
 
 /*BUSSINESS PROCESS MANAGEMENT CSS*/
 /*CSS FOR LARGE SCREEN ABOVE 1200PX*/
@@ -1878,32 +1902,16 @@ padding-bottom: 45px;
   margin-left: 150px;
   margin-bottom: 50px;
 }
-
-/*.navbar-fixed-left {
-  width: fit-content;
-  position: fixed;
-  border-radius: 0;
-  height: auto;
- }
-
-.navbar-fixed-left .navbar-nav > li {
-  float: none; 
-  width: 139px;
+/*Admin navbar*/
+.adminNavbar{
+  background-color: #8ed3f2;
 }
-
-
-
-.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
-  margin-top: -50px;
-  margin-left: 140px;
+.adminNavbarRight{
+  margin-top: 5px!important;
 }
-
-.navbar-inverse .navbar-nav > li a:hover{
- color: black!important ;
+.adminNavbarRight img{
+  width: 50px;
 }
-.navbar-inverse .navbar-nav > li a{
- color: white!important ;
-}*/
 /* line 1, /home/raja/Documents/rails/maktoportalnew/app/assets/stylesheets/scaffolds.scss */
 body {
   background-color: #fff;
