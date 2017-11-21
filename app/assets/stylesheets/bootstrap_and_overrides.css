@@ -1221,28 +1221,12 @@ padding-bottom: 45px;
   margin-bottom: 50px;
 }
 /*Admin navbar*/
-.navbar-fixed-left {
-  width: fit-content;
-  position: fixed;
-  border-radius: 0;
-  height: auto;
- }
-
-.navbar-fixed-left .navbar-nav > li {
-  float: none; 
-  width: 139px;
+.adminNavbar{
+  background-color: #8ed3f2;
 }
-
-
-
-.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
-  margin-top: -50px;
-  margin-left: 140px;
+.adminNavbarRight{
+  margin-top: 5px!important;
 }
-
-.navbar-inverse .navbar-nav > li a:hover{
- color: black!important ;
-}
-.navbar-inverse .navbar-nav > li a{
- color: white!important ;
+.adminNavbarRight img{
+  width: 50px;
 }

@@ -1,0 +1,4 @@
+devise:
+    sessions:
+        signed_in: 'Signed in successfully.'
+        signed_out: 'raja'
