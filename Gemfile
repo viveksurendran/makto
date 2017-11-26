@@ -19,10 +19,6 @@ group :development do
  gem 'puma', '~> 3.7'
 end
 group :production do
-  gem 'thin'
-end
-group :production do
-   gem 'pg'
    gem 'rails_12factor'
 end
 group :development do
