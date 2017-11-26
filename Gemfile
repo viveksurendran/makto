@@ -11,6 +11,7 @@ gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'social-share-button', '0.2.1'
 # Use Puma as the app server
+gem 'sqlite3'
 gem 'devise'
 gem 'carrierwave', '~> 0.9'
 gem 'tinymce-rails'
